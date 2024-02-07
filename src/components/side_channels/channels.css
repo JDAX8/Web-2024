@@ -1,0 +1,77 @@
+/* Code CSS of the channels on the SideBar */
+.s_logo{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  .SideChannels{
+    cursor: pointer;
+    width: 220px;
+    height: 42px;
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -10px;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+  
+  }
+  
+  .SideChannels:hover {
+    background-color: #ffffff5d;
+    border-radius: 10px;
+  }
+  .info-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: -10px;
+  }
+  .category-container{
+    margin-left: -5px;
+  }
+  .ChannelName{
+    width: 100%;
+    height: 16.8px;
+    text-align: center;
+    margin: 0;
+    font-size:medium;
+  }
+  .category{
+    opacity: 0.7 ;
+    font-size: small;
+    margin-top: 0;
+    text-align: center;
+  }
+  .viewers-container{
+    display: flex;
+    align-items: center;
+  }
+  .viewers{
+    margin-left: 5px;
+  }
+  .redcircle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #53fc18;
+    border: 1px solid black;
+  }
+  
+  /* responsibe sidebar */
+  @media (max-width: 767px) {
+    .SideChannels{
+      flex-direction: column;
+    }
+    .info-container{
+      margin-left: 0;
+    }
+    .viewers-container{
+      margin-left: 0;
+    }
+    /* Agrega la propiedad display: none; para que todo desaparezca en dispositivos móviles */
+    .SideChannels, .info-container, .category-container, .ChannelName, .category, .viewers-container, .viewers, .redcircle{
+      display: none;
+    }
+  }

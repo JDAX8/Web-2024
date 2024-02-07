@@ -1,4 +1,5 @@
 import React from "react";
+import './channels.css'
 
 export const SideChannel = () => {
   return (

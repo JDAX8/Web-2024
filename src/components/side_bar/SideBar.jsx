@@ -1,6 +1,7 @@
 import React from "react";
 import { SideChannel } from "../side_channels/channels";
 import { Recommended } from "../Recomendations/Recom";
+import './SideBar.css'
 
 export function SideBar() {
   return (

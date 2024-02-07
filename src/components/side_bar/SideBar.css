@@ -1,0 +1,55 @@
+/* Side Bar css */
+
+.SideBar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    background-color: #1f1f23;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .Foryou {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Foryou p {
+    font-weight: bold;
+    font-size:small;
+    margin-left: -10PX;
+  }
+  
+  .contractbttn {
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    margin-right: -10px;
+    height: 30px;
+    background-color: #1f1f23;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+  
+  }
+  
+  .contractbttn:hover {
+    background-color: #ffffff5d;
+    border-radius: 10px;
+  }
+  .btnimg{
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+  }
+  
+  @media (max-width: 767px) {
+  
+    .SideBar{
+      display: none;
+    }
+  }
+  
