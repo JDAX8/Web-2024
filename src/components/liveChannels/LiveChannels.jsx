@@ -1,16 +1,25 @@
+import stream from "../imgs/stream.jpg";
 import React from "react";
+import './LiveChannels.css'
 
-export const UpChannel = () => {
+
+export const StreamChannel = () => {
   return (
     <>
       <div class="LiveChannels">
-        <img class="Live_logo" src="https://yt3.googleusercontent.com/WDKffZlRISfMve2-rpDaPU_z4DKq-kVaeb8bnEt9HzerG6xg_YxLHOQtklxWHe0fn7cKPEi29g=s900-c-k-c0x00ffffff-no-rj" alt="" />
-        <h2 class="ChannelName">VEGETTA777</h2>
-        <h5 class="ChannelDescription">¿Te crees experto en tarjetas? Hoy tendremos un Quiz Show para que puedas solicitar tu tarjeta de crédito.</h5>
-        <p class="LiveCategory">Just Chatting</p>
-
-        <div class="redcircle"></div>
-        <p class="viewers">9237</p>
+        <div class="streams_image">
+          <img src={stream} alt="" />
+          <div class="on_live"></div>
+          <div class="viewers_count"></div>
+        </div>
+        <div class="info_stream">
+          <div class="streamer_name">
+              <img class="Live_logo" src="https://static-cdn.jtvnw.net/jtv_user_pictures/593b5641-c626-4ba4-ba49-11cb33f6c3e8-profile_image-300x300.png" alt="" />
+              <h2 class="ChannelName">ILLOJUAN</h2>
+          </div>
+          <h2>🏡 MI PRIMERA VEZ EN SOUTH PARK 🏡 - South Park: La Vara de la Verdad #1</h2>
+          <p class="LiveCategory">Just Chatting</p>
+        </div>
       </div>
     </>
   );

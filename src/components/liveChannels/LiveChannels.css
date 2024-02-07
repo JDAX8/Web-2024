@@ -1,0 +1,33 @@
+.LiveChannels{
+    width: 330.66px;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.streams_image{
+    width: 314px ;
+    height: 176px;
+}
+.streams_image img{
+    width: 314px ;
+    height: 176px;
+}
+.streamer_name{
+    display: flex;
+    align-items: center;
+    padding: 8px 0px 0px;
+}
+.Live_logo{
+    width: 32px;
+    height: 32px;
+    border-radius: 30%;
+    margin-left: 10px; 
+}
+.ChannelName{
+    font-size: medium;
+    margin-left: -35%;
+    opacity: 50%;
+}
+
