@@ -42,38 +42,51 @@ h1 {
   text-align: center;
 }
 
-/* Code CSS */
+/* Code CSS of the channels on the SideBar */
 .s_logo{
   width: 30px;
   height: 30px;
   border-radius: 30px;
 }
 .SideChannels{
+  cursor: pointer;
   width: 220px;
   height: 42px;
   display: flex;
-  align-items: center; /* Centra los elementos verticalmente */
+  margin-bottom: 5%;
+  align-items: center;
   justify-content: space-between;
   margin-left: -10px;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 10px;
+
+}
+
+.SideChannels:hover {
+  background-color: #ffffff5d;
+  border-radius: 10px;
 }
 .info-container{
   display: flex;
   flex-direction: column;
-  height: 100%; /* Establece la altura en 100% */
-  margin-left: -10px; /* Agrega este margen para empujar los demás elementos */
+  height: 100%;
+  margin-left: -10px;
 }
 .category-container{
-  margin-left: -5px; /* Ajusta el margen izquierdo */
+  margin-left: -5px;
 }
 .ChannelName{
-  width:117.6px ;
+  width: 100%;
   height: 16.8px;
-  text-align: center; /* Centra el texto */
-  margin: 0; /* Agrega este margen para quitar el margen superior e inferior */
+  text-align: center;
+  margin: 0;
+  font-size:medium;
 }
 .category{
-  margin-top: 0; /* Elimina el margen superior */
-  text-align: center; /* Centra el texto */
+  opacity: 0.7 ;
+  font-size: small;
+  margin-top: 0;
+  text-align: center;
 }
 .viewers-container{
   display: flex;
@@ -86,15 +99,32 @@ h1 {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: red;
+  background-color: #53fc18;
   border: 1px solid black;
+}
+
+/* responsibe sidebar */
+@media (max-width: 767px) {
+  .SideChannels{
+    flex-direction: column;
+  }
+  .info-container{
+    margin-left: 0;
+  }
+  .viewers-container{
+    margin-left: 0;
+  }
+  /* Agrega la propiedad display: none; para que todo desaparezca en dispositivos móviles */
+  .SideChannels, .info-container, .category-container, .ChannelName, .category, .viewers-container, .viewers, .redcircle{
+    display: none;
+  }
 }
 
 /* Side Bar css */
 
 .SideBar {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 240px;
   height: 100%;
@@ -120,6 +150,7 @@ h1 {
   border: none;
   cursor: pointer;
   width: 30px;
+  margin-right: -10px;
   height: 30px;
   background-color: #1f1f23;
   transition: background-color 0.2s ease-in-out;
@@ -136,3 +167,177 @@ h1 {
   height: 25px;
   margin-left: -5px;
 }
+
+@media (max-width: 767px) {
+
+  .SideBar{
+    display: none;
+  }
+}
+
+/* NavBar CSS */
+
+.NavBar-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+   background-color: #18181b;
+   width: 1325px;
+   height: 60px;
+   z-index: 100;
+   display: flex;
+}
+.Left-link-container{
+  display: flex;
+  width: 113.41px;
+  height: 60px;
+}
+.left-side{
+  width: 265px;
+  height: 60px;
+  display: flex;
+}
+.left-side img{
+  width: 80px;
+  height: 28px;
+  margin-left: 20px;
+  margin-top: 14px;
+  /* position: absolute;
+  top: 14px;
+  left: 15px; */
+  cursor: pointer;
+}
+
+.Btn-leftside{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  font-size: large;
+}
+.Btn-leftside a{
+ color: white;
+ font-weight: bolder;
+}
+.Btn-leftside a:hover {
+  color: #53fc18;
+  font-weight: bolder;
+}
+.Options-btn{
+  display: flex;
+}
+.Options-btn button {
+  align-items: center;
+  width: 35px; 
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  display: flex; 
+}
+
+.Options-btn button img {
+  align-items: center;
+  width: 100%; 
+  height: 80%; 
+  margin-top: 32px;
+}
+
+.Options-btn button img:hover {
+  background-color: #ffffff5d;
+  border-radius: 10px;
+}
+.mid-nav-container{
+  display: flex;
+  width: 768px;
+  height: 60px;
+  border-radius: 10px;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+  margin-top: 13px;
+  width: 320px;
+  height: 35.5px;
+  background-color: #393941;
+  position: relative;
+}
+
+.search-container input[type="search"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  flex-grow: 1;
+  padding: 0 10px;
+  margin-left: 12%;
+}
+
+.search-container input[type="search"]::placeholder {
+  color: white;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 35.5px;
+  background-color: #393941;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.search-btn img {
+  margin-bottom: 2%;
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-left: 10px;
+}
+
+.buttons-log-sign{
+  display: flex;
+  width:290.75px ;
+  height: 60px;
+}
+
+.login-button{
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+  width: 108.8px;
+  height: 36px;
+  border-radius: 5px;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.login-button:hover{
+  background-color: #ffffff5d;
+  border-radius: 5px;
+}
+
+.signin-button{
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 108.8px;
+  height: 36px;
+  border-radius: 5px;
+  font-weight: bolder;
+  background-color: #53fc18;
+  border: none;
+  color: #0e0e10;
+  transition: background-color 0.2s ease-in-out;
+}
+.signin-button:hover{
+  background-color: #3ad305;
+  border-radius: 5px;
+}
+
