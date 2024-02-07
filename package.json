@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "vite": "^5.0.8"
   },
   "dependencies": {

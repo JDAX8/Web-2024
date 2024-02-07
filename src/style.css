@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #0e0e10;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,55 +42,97 @@ h1 {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+/* Code CSS */
+.s_logo{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.SideChannels{
+  width: 220px;
+  height: 42px;
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between;
+  margin-left: -10px;
 }
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+.info-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Establece la altura en 100% */
+  margin-left: -10px; /* Agrega este margen para empujar los demás elementos */
+}
+.category-container{
+  margin-left: -5px; /* Ajusta el margen izquierdo */
+}
+.ChannelName{
+  width:117.6px ;
+  height: 16.8px;
+  text-align: center; /* Centra el texto */
+  margin: 0; /* Agrega este margen para quitar el margen superior e inferior */
+}
+.category{
+  margin-top: 0; /* Elimina el margen superior */
+  text-align: center; /* Centra el texto */
+}
+.viewers-container{
+  display: flex;
+  align-items: center;
+}
+.viewers{
+  margin-left: 5px;
+}
+.redcircle{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  border: 1px solid black;
 }
 
-.card {
-  padding: 2em;
+/* Side Bar css */
+
+.SideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #1f1f23;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
+.Foryou {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.Foryou p {
+  font-weight: bold;
+  font-size:small;
+  margin-left: -10PX;
+}
+
+.contractbttn {
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  width: 30px;
+  height: 30px;
+  background-color: #1f1f23;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 10px;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.contractbttn:hover {
+  background-color: #ffffff5d;
+  border-radius: 10px;
+}
+.btnimg{
+  width: 25px;
+  height: 25px;
+  margin-left: -5px;
 }
