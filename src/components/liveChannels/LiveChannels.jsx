@@ -15,10 +15,12 @@ export const StreamChannel = () => {
         <div class="info_stream">
           <div class="streamer_name">
               <img class="Live_logo" src="https://static-cdn.jtvnw.net/jtv_user_pictures/593b5641-c626-4ba4-ba49-11cb33f6c3e8-profile_image-300x300.png" alt="" />
-              <h2 class="ChannelName">ILLOJUAN</h2>
+              <h2 class="Streamer_Name">ILLOJUAN</h2>
           </div>
-          <h2>🏡 MI PRIMERA VEZ EN SOUTH PARK 🏡 - South Park: La Vara de la Verdad #1</h2>
-          <p class="LiveCategory">Just Chatting</p>
+          <div class="stream_desc">
+              <h2>🏡 MI PRIMERA VEZ EN SOUTH PARK 🏡 - South Park: La Vara de la Verdad #1</h2>
+              <p class="LiveCategory">Just Chatting</p>
+          </div>
         </div>
       </div>
     </>

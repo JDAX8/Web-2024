@@ -1,165 +1,180 @@
-/* NavBar CSS */
+html {
+  font-size: 16px;
+}
 
-.NavBar-container{
-    position: fixed;
-    top: 0;
-    left: 0;
-     background-color: #18181b;
-     width: 1325px;
-     height: 60px;
-     z-index: 100;
-     display: flex;
-  }
-  .Left-link-container{
-    display: flex;
-    width: 113.41px;
-    height: 60px;
-  }
-  .left-side{
-    width: 265px;
-    height: 60px;
-    display: flex;
-  }
-  .left-side img{
-    width: 80px;
-    height: 28px;
-    margin-left: 20px;
-    margin-top: 14px;
-    /* position: absolute;
-    top: 14px;
-    left: 15px; */
-    cursor: pointer;
-  }
-  
-  .Btn-leftside{
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    font-size: large;
-  }
-  .Btn-leftside a{
-   color: white;
-   font-weight: bolder;
-  }
-  .Btn-leftside a:hover {
-    color: #53fc18;
-    font-weight: bolder;
-  }
-  .Options-btn{
-    display: flex;
-  }
-  .Options-btn button {
-    align-items: center;
-    width: 35px; 
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    transition: background-color 0.2s ease-in-out;
-    display: flex; 
-  }
-  
-  .Options-btn button img {
-    align-items: center;
-    width: 100%; 
-    height: 80%; 
-    margin-top: 32px;
-  }
-  
-  .Options-btn button img:hover {
-    background-color: #ffffff5d;
-    border-radius: 10px;
-  }
-  .mid-nav-container{
-    display: flex;
-    width: 768px;
-    height: 60px;
-    border-radius: 10px;
-  }
-  .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 30%;
-    margin-top: 13px;
-    width: 320px;
-    height: 35.5px;
-    background-color: #393941;
-    position: relative;
-  }
-  
-  .search-container input[type="search"] {
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
-    outline: none;
-    flex-grow: 1;
-    padding: 0 10px;
-    margin-left: 12%;
-  }
-  
-  .search-container input[type="search"]::placeholder {
-    color: white;
-  }
-  
-  .search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 35.5px;
-    background-color: #393941;
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .search-btn img {
-    margin-bottom: 2%;
-    width: 20px;
-    height: 20px;
-    fill: white;
-    margin-left: 10px;
-  }
-  
-  .buttons-log-sign{
-    display: flex;
-    width:290.75px ;
-    height: 60px;
-  }
-  
-  .login-button{
-    margin-top: 5%;
-    align-items: center;
-    justify-content: center;
-    width: 108.8px;
-    height: 36px;
-    border-radius: 5px;
-    font-weight: bolder;
-    background-color: transparent;
-    border: none;
-    transition: background-color 0.2s ease-in-out;
-  }
-  .login-button:hover{
-    background-color: #ffffff5d;
-    border-radius: 5px;
-  }
-  
-  .signin-button{
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center;
-    width: 108.8px;
-    height: 36px;
-    border-radius: 5px;
-    font-weight: bolder;
-    background-color: #53fc18;
-    border: none;
-    color: #0e0e10;
-    transition: background-color 0.2s ease-in-out;
-  }
-  .signin-button:hover{
-    background-color: #3ad305;
-    border-radius: 5px;
-  }
+.NavBar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #18181b;
+  width: 82.8125em;
+  height: 3.75em;
+  z-index: 100;
+  display: flex;
+}
+
+.Left-link-container {
+  display: flex;
+  width: 7.109375em;
+  height: 3.75em;
+}
+
+.left-side {
+  width: 16.5625em;
+  height: 3.75em;
+  display: flex;
+}
+
+.left-side img {
+  width: 5em;
+  height: 1.75em;
+  margin-left: 1.25em;
+  margin-top: 0.875em;
+  cursor: pointer;
+}
+
+.Btn-leftside {
+  display: flex;
+  align-items: center;
+  margin-left: 2.2em;
+  font-size: 1.2em;
+}
+
+.Btn-leftside a {
+  color: white;
+  font-weight: bolder;
+}
+
+.Btn-leftside a:hover {
+  color: #53fc18;
+  font-weight: bolder;
+}
+
+.Options-btn {
+  display: flex;
+}
+
+.Options-btn button {
+  align-items: center;
+  width: 3.1875em;
+  height: 2.5em;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+}
+
+.Options-btn button img {
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  margin-top: 2.25em;
+}
+
+.Options-btn button img:hover {
+  background-color: #ffffff5d;
+  border-radius: 10px;
+}
+
+.mid-nav-container {
+  display: flex;
+  width: 48em;
+  height: 3.75em;
+  border-radius: 10px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18.75em;
+  margin-top: 0.8125em;
+  width: 20em;
+  height: 2.21875em;
+  background-color: #393941;
+  position: relative;
+}
+
+.search-container input[type="search"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1em;
+  outline: none;
+  flex-grow: 1;
+  padding: 0 0.625em;
+  margin-left: 2.5em;
+}
+
+.search-container input[type="search"]::placeholder {
+  color: white;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.21875em;
+  background-color: #393941;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.search-btn img {
+  margin-bottom: 0.125em;
+  width: 1em;
+  height: 1em;
+  fill: white;
+  margin-left: 0.125em;
+}
+
+.buttons-log-sign {
+  display: flex;
+  width: 13.75em; /* Reducido de 18.125em a 13.75em */
+  height: 3.75em;
+}
+
+
+.signin-button {
+  position: absolute;
+  margin-top: 1.3125em;
+  align-items: center;
+  width: 6.25em; 
+  height: 2.25em;
+  border-radius: 0.3125em;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  margin-left: 1.5em;
+  transition: background-color 0.2s ease-in-out;
+}
+.login-button {
+  margin-top: 1.3em;
+  align-items: center;
+  width: 7.55em;
+  height: 2.25em;
+  border-radius: 0.3125em;
+  font-weight: bolder;
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-button:hover,
+.signin-button:hover {
+  background-color: #ffffff5d;
+  border-radius: 0.3125em;
+}
+
+.signin-button {
+  background-color: #53fc18;
+  color: #0e0e10;
+}
+
+.signin-button:hover {
+  background-color: #3ad305;
+  border-radius: 0.3125em;
+}

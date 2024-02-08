@@ -25,9 +25,23 @@
     border-radius: 30%;
     margin-left: 10px; 
 }
-.ChannelName{
+.Streamer_Name{
     font-size: medium;
-    margin-left: -35%;
+    margin-left: 5%;
     opacity: 50%;
 }
+.stream_desc{
+    padding-right: 10px;
+    margin-top: -10px;
+}
+
+.stream_desc h2{
+    display: flex;
+    font-size: 16px;
+}
+.LiveCategory{
+    display: flex;
+    margin-left: 10px   ;
+}
+
 
