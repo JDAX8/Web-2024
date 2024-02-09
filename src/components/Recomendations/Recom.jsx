@@ -1,5 +1,5 @@
 import React from "react";
-import contractIcon from "../imgs/contract.png";
+import contractIcon from "../../imgs/contract.png";
 
 
 export const Recommended = () => {

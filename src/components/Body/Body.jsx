@@ -13,7 +13,6 @@ export function Body() {
       <SideBar></SideBar>
       <body>
         <StreamChannel></StreamChannel>
-        <h1>¡¡Hello World!!</h1>
       </body>
     </>
   );

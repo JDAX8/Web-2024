@@ -1,24 +1,39 @@
-.LiveChannels{
-    width: 330.66px;
-    height: 315px;
+.LiveChannels {
+    width: 100%;
+    height:  19.6875em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-.streams_image{
-    width: 314px ;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 0.3125em;
+  }
+  .LiveChannels:hover{
+    background-color: #ffffff17;
+    border-radius: 0.3125em;
+  }
+  .streams_image {
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    width: 95% ;
     height: 176px;
-}
+    display: flex; /* Agregar display: flex para poder utilizar align-items y justify-content */
+  }
 .streams_image img{
-    width: 314px ;
-    height: 176px;
+   width: 100%;
+   height: 100%;
+    border-radius: 15px;
 }
 .streamer_name{
     display: flex;
+    width: 314.66px;
+    height: 32px;
     align-items: center;
     padding: 8px 0px 0px;
 }
+.info_stream {
+    height: 41%; 
+  }
 .Live_logo{
     width: 32px;
     height: 32px;
@@ -34,6 +49,9 @@
     padding-right: 10px;
     margin-top: -10px;
 }
+.stream_desc p{
+    margin-top: -2%;
+}
 
 .stream_desc h2{
     display: flex;
@@ -41,7 +59,22 @@
 }
 .LiveCategory{
     display: flex;
-    margin-left: 10px   ;
+    margin-left: 10px;
+    font-size: 14px;
 }
-
-
+.stream_title{
+    width: 98%;
+    height: 20px;
+    margin-bottom: 5%;
+}
+.stream_etiqueta{
+    width: 20%;
+    height: 5%;
+    background-color: #202225;
+    border-radius: 10px;
+    font-size: small;
+}
+.stream_etiqueta p{
+    opacity: 60%;
+    font-size: small;
+}

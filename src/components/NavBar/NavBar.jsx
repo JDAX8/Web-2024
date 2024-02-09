@@ -1,4 +1,4 @@
-import Threedots from "../imgs/Three_dots.png"
+import Threedots from "../../imgs/Three_dots.png"
 import './NavBar.css'
 
 

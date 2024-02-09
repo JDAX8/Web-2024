@@ -1,9 +1,9 @@
-import stream from "../imgs/stream.jpg";
+import stream from "../../imgs/stream.jpg";
 import React from "react";
 import './LiveChannels.css'
 
 
-export const StreamChannel = () => {
+export const StreamChannel = ({streams}) => {
   return (
     <>
       <div class="LiveChannels">
@@ -18,8 +18,11 @@ export const StreamChannel = () => {
               <h2 class="Streamer_Name">ILLOJUAN</h2>
           </div>
           <div class="stream_desc">
-              <h2>🏡 MI PRIMERA VEZ EN SOUTH PARK 🏡 - South Park: La Vara de la Verdad #1</h2>
+            <div class="stream_title">
+              <h2>🏡 MI PRIMERA VEZ EN SOUTH PARK</h2>
+            </div>
               <p class="LiveCategory">Just Chatting</p>
+              <div class="stream_etiqueta"><p>Español</p></div>
           </div>
         </div>
       </div>
