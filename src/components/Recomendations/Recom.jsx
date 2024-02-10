@@ -8,7 +8,7 @@ export const Recommended = () => {
         <div className="Foryou">
             <p>CANALES RECOMENDADOS</p>
             <button className="contractbttn">
-            <img class="btnimg" src={contractIcon} alt="Contract Icon" />
+            <img className="btnimg" src={contractIcon} alt="Contract Icon" />
             </button>
         </div>
     </>

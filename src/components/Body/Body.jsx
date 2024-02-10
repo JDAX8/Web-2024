@@ -1,21 +1,17 @@
-import React from "react";
-import { SideChannel } from "../side_channels/channels";
 import { SideBar } from "../side_bar/SideBar";
 import { NavBar } from "../NavBar/NavBar";
-import { StreamChannel } from "../liveChannels/LiveChannels";
+import {StreamChannel} from "../StreamChannels/StreamChannels"
+import "./Body.css";
 
 export function Body() {
   return (
     <>
-    <header>
-      <NavBar></NavBar>
-    </header>
-      <SideBar></SideBar>
-      <body>
-        <StreamChannel></StreamChannel>
-      </body>
+      <div className="body-container">
+        <SideBar></SideBar>
+        <div className="channels-container">
+          <StreamChannel></StreamChannel>
+        </div>
+      </div>
     </>
   );
-}   
-
-
+}

@@ -1,24 +1,27 @@
-import React from "react";
+import { stream_cards } from "../../data/streams_data";
+
 import './channels.css'
 
-export const SideChannel = () => {
+export const SideChannel = ({ streams = stream_cards }) => {
   return (
-    <>
-      <div class="SideChannels">
-        <div class="logodiv">
-            <img class="s_logo" src="https://yt3.googleusercontent.com/WDKffZlRISfMve2-rpDaPU_z4DKq-kVaeb8bnEt9HzerG6xg_YxLHOQtklxWHe0fn7cKPEi29g=s900-c-k-c0x00ffffff-no-rj" alt="" />
+    <div className="Side_Channels">
+        {streams.map((stream)=> (
+          <div key={stream.id} className="SideChannels">   
+          <div className="logodiv">
+              <img className="s_logo" src={stream.streamer_icon} alt="" />
+          </div>
+          <div className="info-container">
+            <h4 className="ChannelName">{stream.streamer_name}</h4>
+              <div className="category-container">
+              <p className="category">{stream.category}</p>
+            </div>  
+          </div>
+          <div className="viewers-container">
+            <div className="redcircle"></div>
+            <p className="viewers">{stream.views}</p>
+          </div>
         </div>
-        <div class="info-container">
-          <h4 class="ChannelName">VEGETTA777</h4>
-            <div class="category-container">
-            <p class="category">Just Chatting</p>
-          </div>  
-        </div>
-        <div class="viewers-container">
-          <div class="redcircle"></div>
-          <p class="viewers">9237</p>
-        </div>
-      </div>
-    </>
+        ))}
+      </div >
   );
 };

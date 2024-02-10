@@ -11,10 +11,6 @@ export function SideBar() {
       </div>
           <div>
             <SideChannel></SideChannel>
-            <SideChannel></SideChannel>
-            <SideChannel></SideChannel>
-            <SideChannel></SideChannel>
-            <SideChannel></SideChannel>
           </div>
     </div>
   );
