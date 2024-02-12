@@ -1,4 +1,3 @@
-import React from "react";
 import "./StreamChannels.css";
 import { stream_cards } from "../../data/streams_data";
 
@@ -9,8 +8,10 @@ export const StreamChannel = () => {
         <div key={stream.id} className="LiveChannels">
           <div className="streams_image">
             <img src={stream.src} alt="" />
-            <div className="on_live"></div>
-            {/* <div className="viewers_count">{views} viewers</div> */}
+            <div className="Live-section">EN VIVO</div>
+            <div className="on_live">
+            <div className="viewers_count">{stream.views} espectadores</div>
+            </div>
           </div>
           <div className="info_stream">
             <div className="streamer_name">

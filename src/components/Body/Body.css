@@ -1,13 +1,25 @@
     .body-container {
         display: flex;
+        flex-direction: column;
         height: calc(100vh - 56px); 
     }
     
-    .channels-container {
+    .s-hannels-container {
         margin-top: 10%;
         width: 130%;
         height: 40%;
         display: flex;
         cursor: pointer;
         margin-left: -3%;
+    }
+    .b-channels-container {
+        margin-top: 10%;
+        width: 222.8%;
+        height: 25.4em;
+        display: flex;
+        cursor: pointer;
+        margin-left: -5.5%;
+    }
+    .body-sidebar{
+        z-index: 5;
     }

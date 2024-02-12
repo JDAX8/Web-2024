@@ -1,35 +1,38 @@
-.live-channels {
+.b-live-channels {
     display: flex;
-    overflow-x: auto;
+    overflow-x: none;
+    width: 100%;
+    height: 25.4em;
   }
-.LiveChannels {
-    width: 20.73em;
-    height: 19.6875em;
+.b-LiveChannels {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 0.5%;
+    margin-right: 0.2%;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.3125em;
   }
   
-  .LiveChannels:hover{
+.b-LiveChannels:hover{
     background-color: #ffffff17;
     border-radius: 0.3125em;
   }
-  .streams_image {
+.b-streams_image {
     align-items: center; 
     justify-content: center; 
-    width: 95% ;
-    height: 176px;
+    width: 97.2% ;
+    height: 79.72%;
     display: flex;
   }
-.streams_image img{
+.b-streams_image img{
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-}.Live-section{
+    border-radius: 10px;
+}
+.b-Live-section{
   display: flex;
   position: absolute;
   align-items: center;
@@ -38,15 +41,15 @@
   width: 3%;
   height: 2%;
   border-radius: 5px;
-  margin-bottom: 7%;
-  margin-left: -11.5%;
+  margin-bottom: 14%;
+  margin-left: -23.6%;
   opacity: 90%;
   border-radius: 5px;
   font-size: 13px;
   font-weight: bolder;
   color: #53fc18;
 }
-.on_live{
+.b-on_live{
   display: flex;
   position: absolute;
   align-items: center;
@@ -55,24 +58,25 @@
   width: 7%;
   height: 2%;
   border-radius: 5px;
-  margin-top: 7%;
-  margin-left: -7.5%;
+  margin-top: -14%;
+  margin-left: 19.3%;
   opacity: 90%;
 }
-.viewers_count{
+.b-viewers_count{
   position: absolute;
   background-color: #0e0a14;
   border-radius: 5px;
   font-size: .875rem;
 }
-.streamer_name{
+.b-streamer_name{
     display: flex;
     width: 314.66px;
     height: 32px;
     align-items: center;
     padding: 8px 0px 0px;
+    margin-top: -6%;
 }
-  .info_stream {
+.b-info_stream {
     width: 95%;
     height: 40%; 
     display: flex;
@@ -80,51 +84,50 @@
     flex-direction: column;
     height: auto;
   }
-.Live_logo{
+.b-Live_logo{
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
-.Streamer_Name{
+.b-Streamer_Name{
     font-size: medium;
-    margin-left: 2%;
     opacity: 50%;
 }
-.stream_desc{
+.b-stream_desc{
     padding-right: 10px;
     margin-top: -10px;
     flex-shrink: 0; 
 }
-.stream_desc p{
-    margin-top: -2%;
+.b-stream_desc p{
+    margin-top: 0.3%;
 }
 
-.stream_desc h2{
+.b-stream_desc h2{
     display: flex;
     font-size: 16px;
 }
-.LiveCategory {
+.b-LiveCategory {
     display: flex;
     font-size: 14px;
     margin-top: 5px;
   }
-.stream_title {
+.b-stream_title {
     width: 98%;
     margin-bottom: 5%;
     height: 20px; 
   }
-.stream_etiqueta {
+.b-stream_etiqueta {
     width: 20%;
     height: 1.7em;
     background-color: #202225;
     border-radius: 10px;
     font-size: small;
   }
-.stream_etiqueta p{
+.b-stream_etiqueta p{
     opacity: 60%;
     font-size: small;
 }
-.truncate {
+.b-truncate {
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis; 
