@@ -10,12 +10,13 @@ export function Body() {
       <div className="body-container">
         <div className="body-sidebar">
         <SideBar></SideBar>
-        </div>
+        </div>   
         <div className="b-channels-container">
           <BigChannel></BigChannel>
         </div>
-        <br />
-        <div className="s-hannels-container">
+        <div class="color-line">
+        </div>
+        <div className="s-channels-container">
           <StreamChannel></StreamChannel>
         </div>
       </div>

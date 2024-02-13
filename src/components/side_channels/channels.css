@@ -89,4 +89,81 @@
     .SideChannels, .info-container, .category-container, .ChannelName, .category, .viewers-container, .viewers, .redcircle{
       display: none;
     }
+    @media (max-width: 1300px) {
+      .logodiv {
+        width: 15%;
+        height: 70%;
+        margin-right: 5%;
+      }
+      .s_logo {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+      }
+      
+      .SideChannels {
+        cursor: pointer;
+        width: 110%;
+        height: 10%;
+        display: flex;
+        margin-bottom: 3%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 0;
+        transition: background-color 0.2s ease-in-out;
+        border-radius: 10px;
+      }
+      
+      .SideChannels:hover {
+        background-color: #ffffff18;
+        border-radius: 10px;
+      }
+      
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 20%;
+      }
+      
+      .category-container {
+        margin-left: 0;
+      }
+      
+      .ChannelName {
+        width: 100%;
+        height: 16.8px;
+        text-align: left;
+        margin: 0;
+        font-size: medium;
+        margin-top: 10%;
+      }
+      
+      .category {
+        opacity: 0.7;
+        font-size: 14px;
+        margin-top: 0;
+        /* text-align: center; */
+        text-align: left;
+      }
+      
+      .viewers-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .viewers {
+        margin-left: 5px;
+      }
+      
+      .redcircle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #53fc18;
+        border: 1px solid black;
+      }
+
+    }
   }

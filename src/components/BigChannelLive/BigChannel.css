@@ -12,14 +12,10 @@
     justify-content: center;
     flex-direction: column;
     margin-right: 0.2%;
-    transition: background-color 0.2s ease-in-out;
     border-radius: 0.3125em;
   }
-  
-.b-LiveChannels:hover{
-    background-color: #ffffff17;
-    border-radius: 0.3125em;
-  }
+/* .b-LiveChannels:hover{
+  } */
 .b-streams_image {
     align-items: center; 
     justify-content: center; 
@@ -55,11 +51,11 @@
   align-items: center;
   justify-content: center;
   background-color: #0e0a14;
-  width: 7%;
-  height: 2%;
+  width: 10%;
+  height: 3%;
   border-radius: 5px;
-  margin-top: -14%;
-  margin-left: 19.3%;
+  margin-top: -11.5%;
+  margin-left: 13.3%;
   opacity: 90%;
 }
 .b-viewers_count{
@@ -131,4 +127,42 @@
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis; 
+  }
+
+  @media (max-width: 1366px) {
+    .b-live-channels {
+      display: flex;
+      overflow-x: none;
+      margin-left: 11%;
+      width: 100%;
+      height: 25.4em;
+    }
+  .b-LiveChannels {
+      width: 32.4%;
+      height: 68.6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-right: 0.2%;
+      transition: background-color 0.2s ease-in-out;
+      border-radius: 0.3125em;
+    }
+    .b-Live-section{
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      background-color: #0e0a14;
+      width: 5%;
+      height: 3%;
+      border-radius: 5px;
+      margin-bottom: 11.5%;
+      margin-left: -19.6%;
+      opacity: 90%;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: bolder;
+      color: #53fc18;
+    }
   }
