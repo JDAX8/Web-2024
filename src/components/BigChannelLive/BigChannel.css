@@ -14,8 +14,7 @@
     margin-right: 0.2%;
     border-radius: 0.3125em;
   }
-/* .b-LiveChannels:hover{
-  } */
+
 .b-streams_image {
     align-items: center; 
     justify-content: center; 
@@ -23,6 +22,21 @@
     height: 79.72%;
     display: flex;
   }
+  .b-streams_image:hover {
+    transform: scale(1.03);
+    transform-origin: top left;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .b-on_live, .b-viewers_count {
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .b-streams_image:hover .b-on_live, .b-streams_image:hover .b-viewers_count {
+    transform: scale(1.1);
+  }
+
 .b-streams_image img{
     width: 100%;
     height: 100%;
@@ -51,11 +65,11 @@
   align-items: center;
   justify-content: center;
   background-color: #0e0a14;
-  width: 10%;
+  width: 7%;
   height: 3%;
   border-radius: 5px;
-  margin-top: -11.5%;
-  margin-left: 13.3%;
+  margin-top: -13.5%;
+  margin-left: 19.3%;
   opacity: 90%;
 }
 .b-viewers_count{

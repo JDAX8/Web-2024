@@ -14,7 +14,7 @@ export function Body() {
         <div className="b-channels-container">
           <BigChannel></BigChannel>
         </div>
-        <div class="color-line">
+        <div className="color-line">
         </div>
         <div className="s-channels-container">
           <StreamChannel></StreamChannel>
