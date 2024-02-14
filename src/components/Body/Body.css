@@ -4,7 +4,11 @@
         height: calc(100vh - 56px); 
         overflow-y: none;
     }
-    
+    .color-line{
+        border-bottom: 1px solid #24272c;
+        width: 132%;
+        margin-left: -5%;
+    }
     .s-channels-container {
         margin-top: 10%;
         width: 130%;

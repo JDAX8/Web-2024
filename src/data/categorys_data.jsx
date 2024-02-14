@@ -9,7 +9,7 @@ export const category_cards = [
     {
         id: crypto.randomUUID(),
         src: "https://files.kick.com/images/subcategories/15/banner/responsives/b697a8a3-62db-4779-aa76-e4e47662af97___banner_294_392.webp",
-        title: "COnversando",
+        title: "Conversando",
         views: "20.624",
         etiquetas: ["Vida real(IRL)"]
     },

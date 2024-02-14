@@ -1,10 +1,10 @@
-import "./StreamChannels.css";
+import "./LiveCategory.css";
 import { category_cards } from "../../data/categorys_data";
 
 export const LiveCategory = () => {
   return (
     <div className="live-category">
-      {stream_cards.map((category) => (
+      {category_cards.map((category) => (
         <div key={category.id} className="category-main-container">
           <div className="category_image">
             <img src={category.src} alt="" />
