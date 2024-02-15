@@ -14,10 +14,8 @@ export const LiveCategory = () => {
               <h2 className="category_Name">{category.title}</h2>
             </div>
             <div className="category_viewers">
-            <div className="viewers_count">{category.views} espectadores</div>
-            </div>
-            <div className="category_desc">
-              <div className="category_etiqueta"><p>Español</p></div>
+            <div className="category_viewers_count">{category.views} espectadores</div>
+            <div className="category_etiqueta"><p>Español</p></div>
             </div>
           </div>
         </div>

@@ -8,9 +8,9 @@ export const BigChannel = () => {
         <div key={stream.id} className="b-LiveChannels">
           <div className="b-streams_image">
             <img src={stream.src} alt="" />
-            <div className="b-Live-section">EN VIVO</div>
-            <div className="b-on_live">
-            <div className="b-viewers_count">{stream.views} espectadores</div>
+              <div className="b-Live-section">EN VIVO</div>
+              <div className="b-on_live">
+              <div className="b-viewers_count">{stream.views} espectadores</div>
             </div>
           </div>
           <div className="b-info_stream">

@@ -1,0 +1,54 @@
+.live-category {
+    display: flex;
+    overflow-x: none;
+    width: 90%;
+    height: 19.071em;
+  }
+@media (max-width: 1366px) {
+    .live-category {
+        display: flex;
+        overflow-x: none;
+        width: 90%;
+        height: 19.071em;
+      }
+      .category-main-container{
+        flex-direction: column;
+        margin-top: 3%;
+        width:  10.079em;
+        height: 95%;
+        margin-left: 1%;
+      }
+      .category_image{
+        width: 9.833em;
+        height: 13.193em;
+      }
+      .category_image img{
+        width: 100%;
+        border-radius: 5px;
+      }
+      .info_category{
+        width: 10.083em;
+        height: 4.625em;
+        text-align: left;
+      }
+      .info_category h2{
+        font-size: 16px ;
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+      .category_viewers_count{
+        font-size: 14px;
+        margin-top: -10px;
+      }
+      .category_etiqueta{
+        margin-top: -10px;
+        font-size: 12px;
+        background-color:#24272c;
+        width: 35%;
+        height: 25%;
+        text-align: center;
+        border-radius: 15px;
+        opacity: 50%;
+      }
+  }

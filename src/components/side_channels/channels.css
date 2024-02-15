@@ -17,9 +17,8 @@
   display: flex;
   margin-bottom: 3%;
   align-items: center;
-  /* Use flex-start for left alignment within parent */
-  justify-content: flex-start; /* Adjust as needed for other layouts */
-  margin-left: 0; /* Remove negative margin */
+  justify-content: flex-start;
+  margin-left: -4%;
   transition: background-color 0.2s ease-in-out;
   border-radius: 10px;
 }

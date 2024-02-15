@@ -12,6 +12,7 @@ export function Body() {
         <div className="body-sidebar">
         <SideBar></SideBar>
         </div>   
+        <h3>Streams destacados</h3>
         <div className="b-channels-container">
           <BigChannel></BigChannel>
         </div>

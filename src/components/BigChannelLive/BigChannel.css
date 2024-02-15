@@ -16,6 +16,7 @@
   }
 
 .b-streams_image {
+    position: relative;
     align-items: center; 
     justify-content: center; 
     width: 97.2% ;
@@ -168,15 +169,34 @@
       align-items: center;
       justify-content: center;
       background-color: #0e0a14;
-      width: 5%;
-      height: 3%;
+      width: 20%;
+      height: 10%;
       border-radius: 5px;
-      margin-bottom: 11.5%;
-      margin-left: -19.6%;
+      top: 8px;
+      left: 90px;
       opacity: 90%;
       border-radius: 5px;
       font-size: 13px;
       font-weight: bolder;
       color: #53fc18;
+    }
+    .b-on_live{
+      display: flex;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      background-color: #0e0a14;
+      width: 20%;
+      height: 3%;
+      border-radius: 5px;
+      top: 60px;
+      left: 160px;
+      opacity: 90%;
+    }
+    .b-viewers_count{
+      background-color: #0e0a14;
+      border-radius: 5px;
+      font-size: .875rem;
+      width: 200%;
     }
   }

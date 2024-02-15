@@ -3,7 +3,7 @@
         flex-direction: column;
         height: calc(100vh - 56px); 
         overflow-y: none;
-    }
+     }
     .color-line{
         border-bottom: 1px solid #24272c;
         width: 132%;
@@ -18,7 +18,6 @@
         margin-left: -3%;
     }
     .b-channels-container {
-        margin-top: 10%;
         width: 133%;
         height: 25.4em;
         display: flex;
@@ -31,26 +30,28 @@
 
     @media (max-width: 1366px) {
     .b-channels-container {
-        margin-top: 10%;
         width: 100%;
         height: 46%;
         display: flex;
         cursor: pointer;
-        margin-left: 6.7%;
+        margin-left: 7%;
     }
     .color-line{
         border-bottom: 1px solid #24272c;
         width: 86%;
         margin-left: 18%;
     }
-        .s-channels-container {
-            margin-top: 3%;
-            width: 90%;
-            height: 60%;
-            display: flex;
-            cursor: pointer;
-            overflow-y: none;
-            overflow-x: none;
-            margin-left: 18%;
-        }
+     .s-channels-container {
+        margin-top: 3%;
+        width: 90%;
+        height: 60%;
+        display: flex;
+        cursor: pointer;
+        overflow-y: none;
+        overflow-x: none;
+        margin-left: 18%;
+    }
+    .Category-section{
+        margin-left: 18%;
+    }
     }
