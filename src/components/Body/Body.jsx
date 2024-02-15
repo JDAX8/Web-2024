@@ -3,6 +3,7 @@ import { NavBar } from "../NavBar/NavBar";
 import {StreamChannel} from "../StreamChannels/StreamChannels"
 import { BigChannel } from "../BigChannelLive/BigChannel";
 import { LiveCategory } from "../LiveCategory/LiveCategory";
+import { TopGroups } from "../TopgroupsLive/TopGroups";
 import "./Body.css";
 
 export function Body() {
@@ -12,14 +13,22 @@ export function Body() {
         <div className="body-sidebar">
         <SideBar></SideBar>
         </div>   
-        <h3>Streams destacados</h3>
+        <h3 className="title1">Streams destacados</h3>
         <div className="b-channels-container">
           <BigChannel></BigChannel>
         </div>
         <div className="color-line"></div>
         <div className="Category-section">
-        <LiveCategory></LiveCategory>
+          <h3 className="title2">Categorías Top en vivo</h3>
+          <LiveCategory></LiveCategory>
+          <div className="color-line"></div>
+            <h3 className="title2">Grupos Top en directo</h3>
+            <div className="topgroups-sections">
+            <TopGroups></TopGroups>
+          </div>
+          <div className="color-line"></div>
         </div>
+        <h3 className="title3">Canales de Juegos recomendados</h3>
         <div className="s-channels-container">
           <StreamChannel></StreamChannel>
         </div>

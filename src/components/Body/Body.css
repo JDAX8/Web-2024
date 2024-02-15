@@ -10,12 +10,12 @@
         margin-left: -5%;
     }
     .s-channels-container {
-        margin-top: 10%;
+        margin-top: 1%;
         width: 130%;
         height: 40%;
         display: flex;
         cursor: pointer;
-        margin-left: -3%;
+        margin-left: -5%;
     }
     .b-channels-container {
         width: 133%;
@@ -26,6 +26,35 @@
     }
     .body-sidebar{
         z-index: 5;
+    }
+    .Category-section{
+        margin-left:-5%;
+    }
+    .topgroups-sections{
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+    }
+    .title1{
+        margin-top: 5%;
+        font-size: 20px;
+        justify-content: left;
+        text-align: left;
+        margin-left: -5%;    
+    }
+    .title2{
+        margin-top: 1%;
+        font-size: 20px;
+        justify-content: left;
+        text-align: left;
+        margin-left: 1%;    
+    }
+    .title3{
+        margin-top: 2%;
+        font-size: 20px;
+        justify-content: left;
+        text-align: left;
+        margin-left: -4%;    
     }
 
     @media (max-width: 1366px) {
