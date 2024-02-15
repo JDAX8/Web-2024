@@ -21,12 +21,12 @@ export function Body() {
         <div className="Category-section">
           <h3 className="title2">Categorías Top en vivo</h3>
           <LiveCategory></LiveCategory>
-          <div className="color-line"></div>
-            <h3 className="title2">Grupos Top en directo</h3>
+          <div className="color-line-2"></div>
+            <h3 className="title4">Grupos Top en directo</h3>
             <div className="topgroups-sections">
             <TopGroups></TopGroups>
           </div>
-          <div className="color-line"></div>
+          <div className="color-line-3"></div>
         </div>
         <h3 className="title3">Canales de Juegos recomendados</h3>
         <div className="s-channels-container">

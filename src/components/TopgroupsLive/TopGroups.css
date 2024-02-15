@@ -39,3 +39,24 @@
   border-radius: 5px;
   opacity: 100%; 
 }
+@media (max-width: 1366px) {
+  .live-topgroups{
+    display: flex;
+    overflow-x: none;
+    width: 107%;
+    height: 3.896em;
+}
+.main-topgroups{
+  width: 10.708em;
+  height: 3.646em;
+  margin-right: 1em;
+}
+.grouptype{
+  position: relative;
+  font-size: 18px;
+   top: -90%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transition: transform 0.2s ease-in-out, border 0.2s ease-in-out, opacity 0.2s ease-in-out;
+ }
+}
