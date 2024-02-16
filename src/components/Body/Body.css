@@ -31,10 +31,10 @@
     }
     .body-sidebar{
         position: sticky;
-        top: 0; /* Asegura que la barra lateral se mantenga en la parte superior de la pantalla */
-        width: 18em;
+        top: 0;
+        width: auto;
         background-color: #1f1f23;
-        padding: 1.5%;
+        padding: 1%;
         box-sizing: border-box;
     
     }
