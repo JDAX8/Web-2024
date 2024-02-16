@@ -16,12 +16,8 @@ export function SideBar({Open=true}) {
             <div>
               <SideChannel></SideChannel>
             </div>
-          </>
-
-        )
-
+          </>)
         }
-
       </div>
     </div>
   );

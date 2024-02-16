@@ -5,8 +5,8 @@
     height: 25.4em;
   }
 .b-LiveChannels {
-    width: 100%;
-    height: 100%;
+    width: 35.55em;
+    height: 25.434375em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,8 +38,8 @@
   }
 
 .b-streams_image img{
-    width: 100%;
-    height: 100%;
+    width: 35.53125em;
+    height: 21.21875em;
     border-radius: 5px;
 }
 .b-Live-section{

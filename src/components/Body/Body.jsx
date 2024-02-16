@@ -1,9 +1,9 @@
 import { SideBar } from "../side_bar/SideBar";
-import { NavBar } from "../NavBar/NavBar";
 import {StreamChannel} from "../StreamChannels/StreamChannels"
 import { BigChannel } from "../BigChannelLive/BigChannel";
 import { LiveCategory } from "../LiveCategory/LiveCategory";
 import { TopGroups } from "../TopgroupsLive/TopGroups";
+
 import "./Body.css";
 
 export function Body() {

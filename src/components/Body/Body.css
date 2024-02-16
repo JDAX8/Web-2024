@@ -4,37 +4,39 @@
         height: calc(100vh - 56px); 
         width: 100%;
         overflow-y: none;
+        margin-left: 1%;
      }
+     .all-content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+    }
     .color-line{
         border-bottom: 1px solid #24272c;
-        width: 132%;
-        margin-left: -5%;
+        width: 100%;
     }
     .s-channels-container {
         margin-top: 1%;
-        width: 130%;
+        width: 100%;
         height: 40%;
         display: flex;
         cursor: pointer;
-        margin-left: -5%;
     }
     .b-channels-container {
-        width: 133%;
+        width: 100%;
         height: 25.4em;
         display: flex;
         cursor: pointer;
-        margin-left: -5.5%;
     }
     .body-sidebar{
-        width: 100%;
-        height: 90vh;
+        position: sticky;
+        top: 0; /* Asegura que la barra lateral se mantenga en la parte superior de la pantalla */
+        width: 18em;
         background-color: #1f1f23;
         padding: 1.5%;
         box-sizing: border-box;
-        position: sticky;
-    }
-    .Category-section{
-        margin-left:-5%;
+    
     }
     .topgroups-sections{
         margin-top: 1%;
@@ -42,11 +44,10 @@
         margin-bottom: 1%;
     }
     .title1{
-        margin-top: 5%;
+        margin-top: 1%;
         font-size: 20px;
         justify-content: left;
         text-align: left;
-        margin-left: -5%;    
     }
     .title2{
         margin-top: 1%;
@@ -60,7 +61,6 @@
         font-size: 20px;
         justify-content: left;
         text-align: left;
-        margin-left: -4%;    
     }
 
     @media (max-width: 1366px) {
@@ -69,6 +69,13 @@
         height: 46%;
         display: flex;
         cursor: pointer;
+    }
+    .body-sidebar{
+        width: 18em;
+        height: 90vh;
+        background-color: #1f1f23;
+        padding: 1.5%;
+        box-sizing: border-box;
     }
     .all-content{
         display: flex;

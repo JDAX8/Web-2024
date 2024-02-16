@@ -9,17 +9,19 @@
   height: 100%;
   border-radius: 30px;
 }
-
+.Side_Channels{
+  width: 120%;
+  margin-left: -10%;
+}
 .SideChannels {
   cursor: pointer;
-  width: 100%;
+  width: 15.611em;
   height: 10%;
   display: flex;
   margin-bottom: 3%;
   align-items: center;
   justify-content: flex-start;
-  margin-left: -4%;
-  padding-left: 5%;
+  padding: 6px;
   transition: background-color 0.2s ease-in-out;
   border-radius: 10px;
 }

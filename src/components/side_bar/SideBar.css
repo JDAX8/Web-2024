@@ -4,9 +4,6 @@
 }
 
 .SideBar {
-    top: 5%;
-    left: 0;
-    width: 14%;
     height: 100%;
     padding: 1.5%;
     box-sizing: border-box;
@@ -22,5 +19,8 @@
     /* Ajustes específicos para pantallas menores a 768px */
     .SideBar {
       width: 19vw;
+      height: 100%;
+      padding: 1.5%;
+      box-sizing: border-box;
     }
   }
