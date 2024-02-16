@@ -1,0 +1,33 @@
+.Foryou {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .recomended-p {
+    font-weight: bold;
+    font-size: 16px;
+}
+  
+.contractbttn {
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 5%;
+    background-color: #1f1f23;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .contractbttn:hover {
+    background-color: #ffffff5d;
+    border-radius: 10px;
+  }
+  .btnimg{
+    width: 25px;
+    height: 25px;
+  }
+  
+  
