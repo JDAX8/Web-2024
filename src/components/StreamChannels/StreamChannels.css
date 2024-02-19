@@ -19,6 +19,7 @@
     border-radius: 0.3125em;
   }
   .streams_image {
+    position: relative;
     align-items: center; 
     justify-content: center; 
     width: 95% ;
@@ -35,11 +36,11 @@
   align-items: center;
   justify-content: center;
   background-color: #0e0a14;
-  width: 3%;
-  height: 2%;
+  width: 20%;
+  height: 15%;
   border-radius: 5px;
-  margin-bottom: 7%;
-  margin-left: -11.5%;
+  top: 5%;
+  left: 5%;
   opacity: 90%;
   border-radius: 5px;
   font-size: 13px;
@@ -52,16 +53,15 @@
   align-items: center;
   justify-content: center;
   background-color: #0e0a14;
-  width: 7%;
-  height: 2%;
+  width: 45%;
+  height: 15%;
   border-radius: 5px;
-  margin-top: 7%;
-  margin-left: -7.5%;
+  font-size: 14px;
+  top: 80%;
+  left: 5%;
   opacity: 90%;
 }
 .viewers_count{
-  position: absolute;
-  background-color: #0e0a14;
   border-radius: 5px;
   font-size: .875rem;
 }

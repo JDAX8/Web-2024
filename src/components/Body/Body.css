@@ -3,7 +3,7 @@
         flex-direction: column;
         height: calc(100vh - 56px); 
         width: 100%;
-        overflow-y: none;
+        overflow-y: auto;
         margin-left: 1%;
      }
      .all-content{
@@ -36,7 +36,6 @@
         background-color: #1f1f23;
         padding: 1%;
         box-sizing: border-box;
-    
     }
     .topgroups-sections{
         margin-top: 1%;

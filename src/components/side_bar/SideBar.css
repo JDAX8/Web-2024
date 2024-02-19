@@ -1,12 +1,22 @@
 /* Side Bar css */
 .B-Sidebar{
   position: relative;
+  overflow-y: none;
 }
 
 .SideBar {
     height: 100%;
     padding: 1%;
     box-sizing: border-box;
+    transition: width 0.5s ease;
+  }
+  .B-Sidebar.open .SideBar {
+    width: 12vw;
+  }
+  
+  .B-Sidebar.closed .SideBar {
+    width: 2.5vw;
+    overflow: hidden;
   }
 
   @media (max-width: 767px) {
@@ -16,7 +26,6 @@
     }
   }
   @media (max-width: 1366px) {
-    /* Ajustes específicos para pantallas menores a 768px */
     .SideBar {
       width: 19vw;
       height: 100%;

@@ -11,7 +11,7 @@ export const stream_cards = [
   },
   {
       id: crypto.randomUUID(),
-      src: "https://images.kick.com/video_thumbnails/AR1QEjAENDT4/hFOxev5z3TYb/720.webp",
+      src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTASp1WZhWvI5hsCYLAI5Sy2hYHDJ6bv1pYUQ10W8eW0-G1ivGdMfftrYHHQrUHtVmPSJ8&usqp=CAU",
       streamer_icon:"https://files.kick.com/images/user/4298000/profile_image/conversion/d827c7f9-245d-4b8b-a2c5-61aa84588cc5-fullsize.webp",
       title: "HOLA",
       streamer_name:"Lorelu",

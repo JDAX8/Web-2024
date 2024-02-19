@@ -26,7 +26,7 @@ export function SideBar() {
   }, [open]);
 
   return (
-    <div className="B-Sidebar">
+  <div className={`B-Sidebar ${open ? "open" : "closed"}`}>
       <div className="SideBar">
         {open && ( 
           <>
