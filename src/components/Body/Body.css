@@ -69,11 +69,21 @@
         display: flex;
         cursor: pointer;
     }
+    .body-container {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 5px); 
+        width: 100%;
+        overflow-y: auto;
+        margin-left: 1%;
+     }
     .body-sidebar{
-        width: 18em;
-        height: 90vh;
+        position: sticky;
+        height: 95vh;
+        top: 0;
+        width: auto;
         background-color: #1f1f23;
-        padding: 1.5%;
+        padding: 1%;
         box-sizing: border-box;
     }
     .all-content{
@@ -81,7 +91,6 @@
         flex-direction: row;
         width: 100%;
         height: 100%;
-        margin-top: 2%;
     }
     .color-line{
         border-bottom: 1px solid #24272c;

@@ -27,9 +27,18 @@
   }
   @media (max-width: 1366px) {
     .SideBar {
-      width: 19vw;
       height: 100%;
-      padding: 1.5%;
+      padding: 1%;
       box-sizing: border-box;
+      transition: width 0.5s ease;
     }
+    .B-Sidebar.open .SideBar {
+      width: 18vw;
+    }
+    
+    .B-Sidebar.closed .SideBar {
+      width: 4vw;
+      overflow: hidden;
+    }
+  
   }

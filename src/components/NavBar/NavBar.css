@@ -188,7 +188,7 @@ html {
 @media (max-width: 1366px) {
   /* Ajustes específicos para pantallas menores a 768px */
   .NavBar-container {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     background-color: #18181b;
