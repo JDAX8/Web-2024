@@ -1,10 +1,10 @@
 import "./StreamChannels.css";
-import { stream_cards } from "../../data/streams_data";
+import { samllstream_cards } from "../../data/smallstreams_data";
 
 export const StreamChannel = () => {
   return (
     <div className="live-channels">
-      {stream_cards.map((stream) => (
+      {samllstream_cards.map((stream) => (
         <div key={stream.id} className="LiveChannels">
           <div className="streams_image">
             <img src={stream.src} alt="" />

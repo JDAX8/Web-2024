@@ -1,6 +1,7 @@
 .live-channels {
     display: flex;
-    overflow-x: auto;
+    overflow-x: none;
+    overflow-y: none;
   }
 .LiveChannels {
     width: 20.73em;
@@ -12,6 +13,7 @@
     margin-right: 0.5%;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.3125em;
+  
   }
   
   .LiveChannels:hover{
