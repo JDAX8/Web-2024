@@ -1,51 +1,51 @@
-import React, { useState, useEffect } from "react";
-import { SideChannel } from "../side_channels/channels";
-import { Recommended } from "../Recomendations/Recom";
-import { SmallSideBar } from "../Small_sidebar/S_sideBar";
+import React, { useState, useEffect } from 'react'
+import { SideChannel } from '../side_channels/channels'
+import { Recommended } from '../Recomendations/Recom'
+import { SmallSideBar } from '../Small_sidebar/S_sideBar'
 import './SideBar.css'
 
-export function SideBar() {
-  const [open, setOpen] = useState(true);
+export function SideBar () {
+  const [open, setOpen] = useState(true)
 
   const toggleOpen = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
 
   useEffect(() => {
-    const button = document.querySelector(".contractbttn");
+    const button = document.querySelector('.contractbttn')
 
     const handleClick = () => {
-      toggleOpen();
-    };
+      toggleOpen()
+    }
 
-    button.addEventListener("click", handleClick);
+    button.addEventListener('click', handleClick)
 
     return () => {
-      button.removeEventListener("click", handleClick);
-    };
-  }, [open]);
+      button.removeEventListener('click', handleClick)
+    }
+  }, [open])
 
   return (
-  <div className={`B-Sidebar ${open ? "open" : "closed"}`}>
-      <div className="SideBar">
-        {open && ( 
+    <div className={`B-Sidebar ${open ? 'open' : 'closed'}`}>
+      <div className='SideBar'>
+        {open && (
           <>
             <div>
-              <Recommended></Recommended>
+              <Recommended />
             </div>
             <div>
-              <SideChannel></SideChannel>
+              <SideChannel />
             </div>
           </>
         )}
-        {!open && ( 
+        {!open && (
           <>
             <div>
-              <SmallSideBar></SmallSideBar>
+              <SmallSideBar />
             </div>
           </>
         )}
       </div>
     </div>
-  );
+  )
 }
