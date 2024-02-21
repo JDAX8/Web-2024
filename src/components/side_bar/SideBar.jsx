@@ -36,12 +36,14 @@ export function SideBar () {
             <div>
               <SideChannel />
             </div>
+            <p id='Showmore-text'>Mostrar más</p>
           </>
         )}
         {!open && (
           <>
             <div>
               <SmallSideBar />
+              <div className='color-line-sidebar' />
             </div>
           </>
         )}

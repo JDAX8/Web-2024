@@ -29,14 +29,16 @@
         display: flex;
         cursor: pointer;
     }
-    .body-sidebar{
+    .body-sidebar {
         position: sticky;
         top: 0;
         width: auto;
-        background-color: #1f1f23;
-        padding: 1%;
+        background-color: #191b1f;
+        padding: 0.5%;
         box-sizing: border-box;
-    }
+        border-right: 1px solid rgba(255, 255, 255, 0.105);
+      }
+      
     .topgroups-sections{
         margin-top: 1%;
         margin-left: 1%;

@@ -5,13 +5,30 @@
 }
 
 .SideBar {
-    height: 100%;
-    padding: 1%;
-    box-sizing: border-box;
-    transition: width 0.5s ease;
+  height: 100%;
+  padding: 1%;
+  box-sizing: border-box;
+  transition: width 0.5s ease;
+}
+.color-line-sidebar{
+  margin-top: 30%;
+  border-bottom: 3px solid #24272c;
+  width: 100%;
+}
+  #Showmore-text{
+  position: absolute;
+  top: 105%;
+  left: 30%;
+  font-size: 14px;
+  color: #a7b1b7;
+  font-weight:500;
+}
+  #Showmore-text:hover{
+    color: white;
   }
   .B-Sidebar.open .SideBar {
     width: 12vw;
+    cursor: pointer;
   }
   
   .B-Sidebar.closed .SideBar {

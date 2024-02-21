@@ -6,11 +6,12 @@ html {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: #18181b;
+  background-color: #24272c;
   width: 100%;
   height:7%;
   display: flex;
   z-index: 100;
+  align-items: center;
 }
 
 .Left-link-container {
@@ -30,7 +31,6 @@ html {
   width: 5em;
   height: 1.75em;
   margin-left: 20%;
-  margin-top: 20%;
   align-items: center;
   cursor: pointer;
 }
@@ -38,7 +38,6 @@ html {
 .Btn-leftside {
   display: flex;
   align-items: center;
-  margin-top: 5%;
   margin-left: 70%;
   font-size: 1.2em;
 }
@@ -54,32 +53,36 @@ html {
 }
 
 .Options-btn {
+  position: absolute;
+  width: 2.5em;
+  height: 3.1875em;
+  left: 13%;
+  top: 8%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Options-btn button {
-  align-items: center;
-  margin-top: 10%;
-  width: 3.1875em;
-  height: 2.5em;
   background-color: transparent;
   border: none;
   transition: background-color 0.2s ease-in-out;
-  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .Options-btn button img {
-  align-items: center;
+  margin-left: -10%;
   width: 100%;
-  height: 90%;
-  margin-top: 80%;
-  margin-left: 90%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.Options-btn button img:hover {
+.Options-btn:hover {
   background-color: #ffffff5d;
   border-radius: 10px;
 }
+
 
 .mid-nav-container {
   display: flex;
@@ -93,10 +96,10 @@ html {
   justify-content: center;
   align-items: center;
   margin-left: 25%;
-  margin-top: 2%;
+  margin-top: 1.3%;
   width: 60%;
   height: 2.21875em;
-  background-color: #393941;
+  background-color: #191b1f;
   position: relative;
 }
 
@@ -110,7 +113,6 @@ html {
   padding: 0 0.625em;
   margin-left: 2.5em;
 }
-
 .search-container input[type="search"]::placeholder {
   color: white;
 }
@@ -121,7 +123,7 @@ html {
   justify-content: center;
   width: 2.5em;
   height: 2.21875em;
-  background-color: #393941;
+  background-color: #191b1f;
   cursor: pointer;
   position: absolute;
   left: 0;

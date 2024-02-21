@@ -115,16 +115,33 @@
     margin-bottom: 5%;
     height: 20px; 
   }
-.stream_etiqueta {
+.stream_etiquetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20%;
     height: 1.7em;
-    background-color: #202225;
     border-radius: 10px;
     font-size: small;
+    margin-left: 17%;
   }
-.stream_etiqueta p{
-    opacity: 60%;
-    font-size: small;
+.stream_etiquetas p{
+  color: #6b7280;
+  opacity: 100%;
+  font-size: 12PX;
+  margin-left: 8%;
+}
+.big-etiqueta{
+  display: flex;
+  height: 1.25em;
+  margin-right: 10%;
+  background-color: #202225;
+  border-radius: 15PX;
+}
+.etiqueta-container{
+  font-size: 12px;
+  height: 1.25em;
+  width: 50px;
 }
 .truncate {
     white-space: nowrap;

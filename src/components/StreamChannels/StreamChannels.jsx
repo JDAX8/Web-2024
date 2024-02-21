@@ -1,5 +1,5 @@
-import './StreamChannels.css'
 import { smallstreamcards } from '../../data/smallstreams_data'
+import './StreamChannels.css'
 
 export const StreamChannel = () => {
   return (
@@ -21,7 +21,15 @@ export const StreamChannel = () => {
             <div className='stream_desc'>
               <h2 className='stream_title truncate'>{stream.title}</h2>
               <p className='LiveCategory'>{stream.category}</p>
-              <div className='stream_etiqueta'><p>Español</p></div>
+              <div className='stream_etiquetas'>
+                {stream.etiquetas.map((etiqueta, index) => (
+                  <div key={index} className='big-etiqueta'>
+                    <div className='etiqueta-container'>
+                      <p>{etiqueta}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
