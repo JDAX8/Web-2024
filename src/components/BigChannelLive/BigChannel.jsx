@@ -8,7 +8,7 @@ import './BigChannel.css'
 export const BigChannel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [hoveredIndex, setHoveredIndex] = useState(null)
-  
+
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 3) % streamcards.length)
   }
@@ -18,6 +18,7 @@ export const BigChannel = () => {
       (prevIndex) => (prevIndex - 3 + streamcards.length) % streamcards.length
     )
   }
+
   return (
     <div className='b-live-channels'>
       {streamcards.slice(currentIndex, currentIndex + 3).map((stream, index) => (
@@ -33,7 +34,8 @@ export const BigChannel = () => {
             <div className='b-on_live'>
               <div className='b-viewers_count'>{stream.views} espectadores</div>
             </div>
-            {/* {hoveredIndex === index && ( */}
+            {/* Conditional rendering for hovered name container */}
+            {hoveredIndex === index && (
               <div className='name-container'>
                 <div className='logo-name-container'>
                   <img className='mini-logo-container' src={stream.streamer_icon} alt='' />
@@ -41,7 +43,7 @@ export const BigChannel = () => {
                   <img id='link-icon' src={link} />
                 </div>
               </div>
-            {/* )} */}
+            )}
           </div>
           <div className='b-info_stream'>
             <div className='b-stream_desc'>
@@ -54,8 +56,14 @@ export const BigChannel = () => {
           </div>
         </div>
       ))}
-      <button className='previous_btn' onClick={handlePrev}><img src={prev} alt='' /></button>
-      <button className='next_btn' onClick={handleNext}><img src={next} alt='' /></button>
+      <div className='navigation-buttons'>
+        <button className='previous_btn' onClick={handlePrev}>
+          <img src={prev} alt='' />
+        </button>
+        <button className='next_btn' onClick={handleNext}>
+          <img src={next} alt='' />
+        </button>
+      </div>
     </div>
   )
 }

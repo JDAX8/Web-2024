@@ -6,10 +6,10 @@ import { useState } from 'react'
 import './NavBar.css'
 
 export const NavBar = () => {
-  const [menuVisible, setMenuVisible] = useState (false);
+  const [menuVisible, setMenuVisible] = useState(false)
 
-  const toggleMenu = () =>{
-    setMenuVisible(!menuVisible)  ;
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible)
   }
 
   return (
@@ -44,12 +44,11 @@ export const NavBar = () => {
             <button className='signin-button'>Registrarse</button>
           </div>
         </div>
-        {menuVisible &&(
+        {menuVisible && (
           <div className='Burguer-nav-menu'>
-          <BurguerMenu legalfootercards={legalfootercards} showImage={false} />
+            <BurguerMenu legalfootercards={legalfootercards} showImage={false} />
           </div>
-        )
-        }
+        )}
       </nav>
     </>
   )

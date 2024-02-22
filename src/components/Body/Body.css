@@ -68,11 +68,18 @@
         margin-top: 10%;
         margin-bottom: 10%;
     }
+    .BigChannel-overflow{
+        width: 23.125em;
+        height: 17.65em;
+        overflow: none;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+    }
 
     @media (max-width: 1366px) {
     .b-channels-container {
         width: 66.5em;
-        height: 46%;
+        height: 100%;
         display: flex;
         cursor: pointer;
     }
@@ -156,4 +163,56 @@
         margin-top: 5%;
         margin-bottom: 10%;
     }
+    }
+    @media (max-width: 768px) {
+        .all-content {
+          flex-direction: column;
+          width: 23.438em;
+          height: 100%;
+        }
+        .title1-container{
+            position: relative;
+            height: 8%;
+        }
+      
+        .body-container {
+          margin-left: 0%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 0.5%;
+        }
+      
+        .body-sidebar {
+          display: none;
+        }
+        .title1{
+            display: block;
+            padding-left: 5%;
+        }
+        .b-channels-container {
+            width: 22.5em;
+            height: 100%;
+            display: flex;
+            cursor: pointer;
+        }
+        .BigChannel-overflow{
+            width: 23.125em;
+            height: 65%;
+            overflow-x: auto;
+            overflow: hidden;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+        }
+        .category-overflow{
+            width: 23.125em;
+            height: 17.65em;
+            overflow: hidden;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+        }
+        .color-line{
+            display: none;
+        }
+      
     }

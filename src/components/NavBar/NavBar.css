@@ -249,18 +249,19 @@ html {
 
 @media (max-width: 768px) {
   .NavBar-container {
-    height: 60px; /* Adjust height as needed */
-    padding: 0 15px; /* Add padding for smaller screens */
+    height: 60px; 
+    padding: 0 15px;
+    position: sticky;
   }
   .Options-btn{
     display: none;
   }
   .Btn-leftside {
-    display: none; /* Hide the left-side content */
+    display: none;
   }
 
   .mid-nav-container {
-    display: none; /* Hide the search container */
+    display: none;
   }
 
   .buttons-log-sign {
