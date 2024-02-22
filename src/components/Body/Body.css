@@ -11,6 +11,7 @@
         flex-direction: row;
         width: 100%;
         height: 100%;
+        overflow-y: hidden;
     }
     .color-line{
         border-bottom: 1px solid #24272c;
@@ -63,6 +64,10 @@
         justify-content: left;
         text-align: left;
     }
+    .footer-container-final{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
 
     @media (max-width: 1366px) {
     .b-channels-container {
@@ -77,14 +82,15 @@
         height: calc(100vh - 5px); 
         width: 100%;
         overflow-y: auto;
-        margin-left: 1%;
+        margin-left: 0%;
+        padding: 0.5%;
      }
     .body-sidebar{
         position: sticky;
-        height: 95vh;
+        height: 100vh;
         top: 0;
         width: auto;
-        background-color: #1f1f23;
+        background-color: #191b1f;
         padding: 1%;
         box-sizing: border-box;
     }
@@ -96,7 +102,7 @@
     }
     .color-line{
         border-bottom: 1px solid #24272c;
-        width: 80%;
+        width: 100%;
     }
     .color-line-2{
         border-bottom: 1px solid #24272c;
@@ -122,7 +128,7 @@
         margin-left: 1%;
     }
     .title1{
-        margin-top: 5%;
+        margin-top: 1%;
         font-size: 20px;
         justify-content: left;
         text-align: left;
@@ -145,5 +151,9 @@
         font-size: 20px;
         justify-content: left;
         text-align: left;
+    }
+    .footer-container-final{
+        margin-top: 5%;
+        margin-bottom: 10%;
     }
     }

@@ -1,0 +1,134 @@
+.principal-footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: -2%;
+}
+.footer-logo-img{
+    width: 5em;
+    height: 1.625em;
+}
+.footer-logo-img img{
+    width: 100%;
+    height: 100%;
+}
+.legal-container-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.legales-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid  #fff;
+    opacity: 50%;
+    height: 1px;
+    width: 120%;
+    padding: 10px;  
+}
+.recursos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid  #fff;
+    opacity: 50%;
+    height: 1px;
+    width: 80%;
+    padding: 10px;  
+}
+.kick-footer{
+    margin-right: 5%;
+}
+.div-color:hover, .legales-container:hover{
+    color: #fff;
+    opacity: 70%;
+    cursor: pointer;
+}
+h2{
+    font-size: medium;
+}
+@media (max-width: 1366px) {
+    .principal-footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-left: -2%;
+    }
+    .footer-logo-img{
+        margin-bottom: 3%;
+        width: 5em;
+        height: 1.625em;
+    }
+    .footer-logo-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .legal-container-main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .legales-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid  #fff;
+        opacity: 50%;
+        height: 1px;
+        width: 120%;
+        padding: 10px;  
+    }
+    .recursos-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid  #fff;
+        opacity: 50%;
+        height: 1px;
+        width: 80%;
+        padding: 10px;  
+    }
+    .kick-footer{
+        margin-right: 5%;
+    }
+    .div-color:hover, .legales-container:hover{
+        color: #fff;
+        opacity: 70%;
+        cursor: pointer;
+    }
+    h2{
+        font-size: medium;
+    }
+    .boton-idioma{
+        width: 7.75em;
+        height: 2.625em;
+        display: flex;
+        align-items: center;
+        background-color:#474f54 ;
+        border: transparent;
+        border-radius: 5px;
+    }
+    .bandera{
+        width: 1.125em;
+        height: 0.875em;
+        margin-right: 10%;
+    }
+    .unfold-image{
+        width: 20%;
+    }
+    .burguer-menu-footer{
+        position: block;
+        z-index: 10;
+    }
+}

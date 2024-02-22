@@ -29,24 +29,24 @@ export const smallstreamcards = [
     category: 'South Park',
     etiquetas: ['Español', 'Acción', 'MOBA']
   },
-  {
-    id: crypto.randomUUID(),
-    src: 'https://images.kick.com/video_thumbnails/sCClqzlNxmvj/feDmPvksnYV4/480.webp',
-    streamer_icon: 'https://files.kick.com/images/user/1777357/profile_image/bc68bdcd-7bc0-4de9-a2ad-99cf1bca65b8',
-    title: 'REACCIONANDO A COSAS VARIAS 😱 | CONQUISTANDO A LA PARCE 💘😍 HOY ERA TU OPORTUNIDAD 💀 | 9295 👹 | !redes !tema  ',
-    streamer_name: 'Samulx',
-    views: '2.235 ',
-    category: 'Just Chating',
-    etiquetas: ['Español', 'Acción', 'MOBA']
-  },
-  {
-    id: crypto.randomUUID(),
-    src: 'https://images.kick.com/video_thumbnails/3f1UOdR1ahxw/7fwVve85pWqH/480.webp',
-    streamer_icon: 'https://yt3.googleusercontent.com/FKKlIaWkVdghBa_7WGXqRTYD2ywrYxEQBYlMDuRC6LnD6vHBHFZohIPuLrJX8UCJoJh612mwIQ=s900-c-k-c0x00ffffff-no-rj',
-    title: 'VOLVIMOS A ARGENTINA, IRL CON LOS PIBES Y TIMBA 2K USD',
-    streamer_name: 'Zelika',
-    views: '1.022',
-    category: 'Just Chating',
-    etiquetas: ['Español', 'Acción', 'MOBA']
-  }
+  // {
+  //   id: crypto.randomUUID(),
+  //   src: 'https://images.kick.com/video_thumbnails/sCClqzlNxmvj/feDmPvksnYV4/480.webp',
+  //   streamer_icon: 'https://files.kick.com/images/user/1777357/profile_image/bc68bdcd-7bc0-4de9-a2ad-99cf1bca65b8',
+  //   title: 'REACCIONANDO A COSAS VARIAS 😱 | CONQUISTANDO A LA PARCE 💘😍 HOY ERA TU OPORTUNIDAD 💀 | 9295 👹 | !redes !tema  ',
+  //   streamer_name: 'Samulx',
+  //   views: '2.235 ',
+  //   category: 'Just Chating',
+  //   etiquetas: ['Español', 'Acción', 'MOBA']
+  // },
+  // {
+  //   id: crypto.randomUUID(),
+  //   src: 'https://images.kick.com/video_thumbnails/3f1UOdR1ahxw/7fwVve85pWqH/480.webp',
+  //   streamer_icon: 'https://yt3.googleusercontent.com/FKKlIaWkVdghBa_7WGXqRTYD2ywrYxEQBYlMDuRC6LnD6vHBHFZohIPuLrJX8UCJoJh612mwIQ=s900-c-k-c0x00ffffff-no-rj',
+  //   title: 'VOLVIMOS A ARGENTINA, IRL CON LOS PIBES Y TIMBA 2K USD',
+  //   streamer_name: 'Zelika',
+  //   views: '1.022',
+  //   category: 'Just Chating',
+  //   etiquetas: ['Español', 'Acción', 'MOBA']
+  // }
 ]

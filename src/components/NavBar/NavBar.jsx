@@ -1,7 +1,17 @@
 import Threedots from '../../imgs/Three_dots.png'
+import { BurguerMenu } from '../BurguerMenu/BurguerMenu'
+import { legalfootercards } from '../../data/footer_data'
+
+import { useState } from 'react'
 import './NavBar.css'
 
 export const NavBar = () => {
+  const [menuVisible, setMenuVisible] = useState (false);
+
+  const toggleMenu = () =>{
+    setMenuVisible(!menuVisible)  ;
+  }
+
   return (
     <>
       <nav className='NavBar-container'>
@@ -16,7 +26,7 @@ export const NavBar = () => {
               <a href=''> Explorar</a>
             </div>
             <div className='Options-btn'>
-              <button><img src={Threedots} alt='' /></button>
+              <button onClick={toggleMenu}><img src={Threedots} alt='' /></button>
             </div>
           </div>
         </div>
@@ -34,6 +44,12 @@ export const NavBar = () => {
             <button className='signin-button'>Registrarse</button>
           </div>
         </div>
+        {menuVisible &&(
+          <div className='Burguer-nav-menu'>
+          <BurguerMenu legalfootercards={legalfootercards} showImage={false} />
+          </div>
+        )
+        }
       </nav>
     </>
   )

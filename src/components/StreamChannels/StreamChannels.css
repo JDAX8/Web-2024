@@ -152,7 +152,8 @@
   @media (max-width: 1366px) {
     .live-channels {
       display: flex;
-      overflow-x: auto;
+      overflow-x: none;
+    overflow-y: none;
     }
   .LiveChannels {
       width: 20.73em;
@@ -187,11 +188,10 @@
     align-items: center;
     justify-content: center;
     background-color: #0e0a14;
-    width: 5%;
-    height: 3%;
+    width: 20%;
+    height: 15%;
     border-radius: 5px;
     margin-bottom: 10.5%;
-    margin-left: -17.5%;
     opacity: 90%;
     border-radius: 5px;
     font-size: 13px;
@@ -204,11 +204,9 @@
     align-items: center;
     justify-content: center;
     background-color: #0e0a14;
-    width: 10%;
-    height: 3%;
+    width: 50%;
+    height: 15%;
     border-radius: 5px;
-    margin-top: -10.5%;
-    margin-left: 12.5%;
     opacity: 90%;
   }
   .viewers_count{

@@ -3,6 +3,7 @@ import { StreamChannel } from '../StreamChannels/StreamChannels'
 import { BigChannel } from '../BigChannelLive/BigChannel'
 import { LiveCategory } from '../LiveCategory/LiveCategory'
 import { TopGroups } from '../TopgroupsLive/TopGroups'
+import { Footer } from '../Footer/Footer'
 
 import './Body.css'
 
@@ -33,6 +34,10 @@ export function Body () {
           <div className='s-channels-container'>
             <StreamChannel />
           </div>
+          <div className='color-line' />
+          <div className='footer-container-final'>
+          <Footer></Footer>
+        </div>
         </div>
       </div>
     </>

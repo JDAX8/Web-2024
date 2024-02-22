@@ -186,17 +186,87 @@ html {
   background-color: #3ad305;
   border-radius: 0.3125em;
 }
+.Burguer-nav-menu{
+  position: absolute;
+  top: 90%;
+  left: 13%;
+} 
 
 @media (max-width: 1366px) {
-  /* Ajustes específicos para pantallas menores a 768px */
-  .NavBar-container {
+    .NavBar-container {
     position: sticky;
     top: 0;
     left: 0;
-    background-color: #18181b;
+    background-color: #24272c;
     width: 100%;
     height:8.88%;
     z-index: 100;
     display: flex;
+  }
+  .Options-btn {
+    position: absolute;
+    width: 2.5em;
+    height: 3.1875em;
+    left: 18%;
+    top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Options-btn button {
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Options-btn button img {
+    margin-left: -10%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .Burguer-nav-menu{
+    position: absolute;
+    top: 90%;
+    left: 18%;
+  }
+}
+@media (max-width: 767px) {
+  .Options-btn {
+    left: auto;
+    margin-top: 0;
+  }
+
+  .Burguer-nav-menu {
+    position: static;
+    margin-top: 1em;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .NavBar-container {
+    height: 60px; /* Adjust height as needed */
+    padding: 0 15px; /* Add padding for smaller screens */
+  }
+  .Options-btn{
+    display: none;
+  }
+  .Btn-leftside {
+    display: none; /* Hide the left-side content */
+  }
+
+  .mid-nav-container {
+    display: none; /* Hide the search container */
+  }
+
+  .buttons-log-sign {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
   }
 }

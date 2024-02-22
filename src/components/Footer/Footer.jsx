@@ -1,6 +1,4 @@
-import { FooterInfo } from '../FooterInfo/Footerinfo'
-import React from 'react'
-
+import { FooterInfo } from "../FooterInfo/FooterInfo"
 export function Footer () {
   return (
     <>

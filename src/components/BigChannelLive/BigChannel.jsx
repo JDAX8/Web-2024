@@ -8,7 +8,7 @@ import './BigChannel.css'
 export const BigChannel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [hoveredIndex, setHoveredIndex] = useState(null)
-
+  
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 3) % streamcards.length)
   }
@@ -33,7 +33,7 @@ export const BigChannel = () => {
             <div className='b-on_live'>
               <div className='b-viewers_count'>{stream.views} espectadores</div>
             </div>
-            {hoveredIndex === index && (
+            {/* {hoveredIndex === index && ( */}
               <div className='name-container'>
                 <div className='logo-name-container'>
                   <img className='mini-logo-container' src={stream.streamer_icon} alt='' />
@@ -41,7 +41,7 @@ export const BigChannel = () => {
                   <img id='link-icon' src={link} />
                 </div>
               </div>
-            )}
+            {/* )} */}
           </div>
           <div className='b-info_stream'>
             <div className='b-stream_desc'>
