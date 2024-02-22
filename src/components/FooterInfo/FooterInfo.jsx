@@ -1,18 +1,18 @@
-import { legalfootercards } from '../../data/footer_data';
-import { recursosfootercards } from '../../data/footer_data2';
-import { idiomacards } from '../../data/idioma_data';
-import { BurguerMenu } from '../BurguerMenu/BurguerMenu';
-import kicklogo from '../../imgs/kick-logo-png.png';
+import { legalfootercards } from '../../data/footer_data'
+import { recursosfootercards } from '../../data/footer_data2'
+import { idiomacards } from '../../data/idioma_data'
+import { BurguerMenu } from '../BurguerMenu/BurguerMenu'
+import kicklogo from '../../imgs/kick-logo-png.png'
 import unfold from '../../imgs/unfold.png'
 import { useState } from 'react'
 
-import './FooterInfo.css';
+import './FooterInfo.css'
 
 export const FooterInfo = () => {
-  const [menuVisible, setMenuVisible] = useState (false);
+  const [menuVisible, setMenuVisible] = useState(false)
 
-  const toggleMenu = () =>{
-    setMenuVisible(!menuVisible);
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible)
   }
 
   return (
@@ -51,22 +51,21 @@ export const FooterInfo = () => {
       <div className='recursos-title'>
         <h2>Idioma</h2>
       </div>
-      {menuVisible&&(
-          <div className='burguer-menu-footer'>
-                  <BurguerMenu legalfootercards={idiomacards}/>
-          </div>
-      )
-      }
-      <button onClick={toggleMenu}className='boton-idioma'>
+      {menuVisible && (
+        <div className='burguer-menu-footer'>
+          <BurguerMenu legalfootercards={idiomacards} />
+        </div>
+      )}
+      <button onClick={toggleMenu} className='boton-idioma'>
         {idiomacards.map((idioma) => (
-          <div className='boton-idioma'>
-            <img className="bandera" src={idioma.src} alt="" />
+          <div className='boton-idioma' key={idioma.id}>
+            <img className='bandera' src={idioma.src} alt='' />
             <p>{idioma.title}</p>
-            <img className="unfold-image"src={unfold}alt="" />
+            <img className='unfold-image' src={unfold} alt='' />
           </div>
         ))}
-       
+
       </button>
     </footer>
-  );
-};
+  )
+}

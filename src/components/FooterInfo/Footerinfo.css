@@ -53,6 +53,27 @@
 h2{
     font-size: medium;
 }
+.boton-idioma{
+    width: 7.75em;
+    height: 2.625em;
+    display: flex;
+    align-items: center;
+    background-color:#474f54 ;
+    border: transparent;
+    border-radius: 5px;
+}
+.bandera{
+    width: 1.125em;
+    height: 0.875em;
+    margin-right: 10%;
+}
+.unfold-image{
+    width: 20%;
+}
+.burguer-menu-footer{
+    position: block;
+    z-index: 10;
+}
 @media (max-width: 1366px) {
     .principal-footer-container{
         display: flex;
