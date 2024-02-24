@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import next from '../../imgs/right.png'
 import prev from '../../imgs/left.png'
 import link from '../../imgs/link.png'
+
 import './BigChannel.css'
 
 export const BigChannel = () => {

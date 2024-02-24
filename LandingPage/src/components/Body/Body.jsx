@@ -36,7 +36,7 @@ export function Body () {
           <div className='title1-container'>
             <h3 className='title1'>Streams destacados</h3>
           </div>
-          <div className='BigChannel-overflow'>
+          <div className='component-overflow-b'>
             <div className='b-channels-container'>
               <BigChannel
                 streamcards={streamcards}
@@ -51,21 +51,24 @@ export function Body () {
           </div>
           <div className='color-line' />
           <h3 className='title1'>Categorías Top en vivo</h3>
-          <div className='category-overflow'>
+          <div className='component-overflow'>
             <div className='Category-section'>
               <LiveCategory />
             </div>
           </div>
           <div className='color-line' />
           <h3 className='title4'>Grupos Top en directo</h3>
-          <div className='topgroups-sections'>
-            <TopGroups />
+          <div className='topgroups-overflow'>
+            <div className='topgroups-sections'>
+              <TopGroups />
+            </div>
           </div>
           <div className='color-line' />
-
           <h3 className='title3'>Canales de Juegos recomendados</h3>
-          <div className='s-channels-container'>
-            <StreamChannel />
+          <div className='component-overflow'>
+            <div className='s-channels-container'>
+              <StreamChannel />
+            </div>
           </div>
           <div className='color-line' />
           <div className='footer-container-final'>

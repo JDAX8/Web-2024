@@ -13,7 +13,6 @@
     margin-right: 0.5%;
     transition: background-color 0.2s ease-in-out;
     border-radius: 0.3125em;
-  
   }
   
   .LiveChannels:hover{
@@ -278,4 +277,13 @@
       overflow: hidden; 
       text-overflow: ellipsis; 
     }
+  }
+  @media (max-width: 768px) {
+    .live-channels {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      height: 150%;
+    }
+
   }

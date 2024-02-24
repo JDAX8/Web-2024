@@ -1,4 +1,4 @@
-import { FooterInfo } from "../FooterInfo/FooterInfo"
+import { FooterInfo } from '../FooterInfo/FooterInfo'
 export function Footer () {
   return (
     <>

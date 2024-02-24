@@ -19,14 +19,12 @@
     }
     .s-channels-container {
         margin-top: 1%;
-        width: 100%;
         height: 40%;
         display: flex;
         cursor: pointer;
     }
     .b-channels-container {
         width: 100%;
-        height: 25.4em;
         display: flex;
         cursor: pointer;
     }
@@ -79,7 +77,6 @@
     @media (max-width: 1366px) {
     .b-channels-container {
         width: 66.5em;
-        height: 100%;
         display: flex;
         cursor: pointer;
     }
@@ -123,7 +120,6 @@
     }
      .s-channels-container {
         margin-top: -1%;
-        width: 90%;
         height: 60%;
         display: flex;
         cursor: pointer;
@@ -164,55 +160,62 @@
         margin-bottom: 10%;
     }
     }
-    @media (max-width: 768px) {
-        .all-content {
-          flex-direction: column;
-          width: 23.438em;
-          height: 100%;
-        }
-        .title1-container{
-            position: relative;
-            height: 8%;
-        }
-      
-        .body-container {
-          margin-left: 0%;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          padding: 0.5%;
-        }
-      
-        .body-sidebar {
-          display: none;
-        }
-        .title1{
-            display: block;
-            padding-left: 5%;
-        }
-        .b-channels-container {
-            width: 22.5em;
-            height: 100%;
-            display: flex;
-            cursor: pointer;
-        }
-        .BigChannel-overflow{
-            width: 23.125em;
-            height: 65%;
-            overflow-x: auto;
-            overflow: hidden;
-            padding-left: 0.25rem;
-            padding-right: 0.25rem;
-        }
-        .category-overflow{
-            width: 23.125em;
-            height: 17.65em;
-            overflow: hidden;
-            padding-left: 0.25rem;
-            padding-right: 0.25rem;
-        }
-        .color-line{
-            display: none;
-        }
-      
-    }
+   @media (max-width: 768px) {
+  .all-content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .title1-container {
+    position: relative;
+    height: 8%;
+  }
+  .component-overflow-b{
+    height: 45%;
+  }
+  .body-container {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+  }
+
+  .body-sidebar {
+    display: none;
+  }
+
+  .title1 {
+    display: block;
+    padding-left: 5%;
+  }
+
+  .b-channels-container {
+    width: 100%;
+    height: none;
+    cursor: pointer;
+  }
+
+  .category-overflow {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .color-line {
+    display: none;
+  }
+
+  .footer-container-final {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .s-channels-container {
+    margin-top: -1%;
+    display: flex;
+    cursor: pointer;
+}
+}

@@ -153,3 +153,24 @@ h2{
         z-index: 10;
     }
 }
+@media (max-width: 768px) {
+    .principal-footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo-img {
+      width: 3em;
+      height: 1.25em;
+    }
+  
+    .legal-container-main,
+    .recursos-container {
+      flex-direction: column;
+      border-right: none;
+    }
+    .legales-container {
+        border-right: none;
+      }
+  }
+  

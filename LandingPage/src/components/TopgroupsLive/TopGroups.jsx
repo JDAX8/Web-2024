@@ -7,7 +7,7 @@ export const TopGroups = () => {
       {topgroupscards.map((topgroups) => (
         <div key={topgroups.id} className='main-topgroups'>
           <div className='topgroups_image'>
-            <img src={topgroups.src} alt='' />
+            <img id='topgrups-img-size' src={topgroups.src} alt='' />
             <h2 className='grouptype'>{topgroups.title}</h2>
           </div>
         </div>
