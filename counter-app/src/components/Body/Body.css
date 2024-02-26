@@ -1,0 +1,34 @@
+.body-container{
+    display: "flex";
+	flex-direction: "column";
+	align-items: "center";
+	justify-content: "center";
+	font-size: "300%";
+	position: "absolute";
+	width: "100%";
+	height: "100%";
+	top: "-15%";
+}
+.counter-body-container{
+    font-size: "120%";
+	position: "relative";
+	top: "10vh";
+}
+.increase-button{
+    font-size: "60%";
+	position: "relative";
+	top: "20vh";
+	margin-right: "5px";	
+    background-color: "green";
+	border-radius: "8%";
+	color: "white";
+}
+.decreament-button{
+    font-size: "60%";
+	position: "relative";
+	top: "20vh";
+	margin-left: "5px";
+	background-color: "red";
+	border-radius: "8%";
+	color: "white";
+}

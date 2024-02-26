@@ -1,14 +1,32 @@
-import React from 'react';
-import gifImage from './gifs/{{ gif }}';
+import React, { useState } from "react";
 
-export const Body = ({ count, gif }) => {
-  return (
-    <div>
-      <h1>Contador de repeticiones</h1>
-      <p>Ejercicio: {gif}</p>
-      <h2>{count}</h2>
-      <img src={gifImage} alt="Ejercicio" />
-    </div>
-  );
+import "./Body.css";
+
+export const Body = () => {
+	const [counter, setCounter] = useState(0);
+
+	const handleClick1 = () => {
+		setCounter(counter + 1);
+	};
+
+	const handleClick2 = () => {
+		setCounter(counter - 1);
+	};
+
+	return (
+		<div className="body-container">
+			Counter Body
+			<div className="counter-body-container">
+				{counter}
+			</div>
+			<div className="buttons">
+				<button className="increase-button" onClick={handleClick1}>
+					Increment
+				</button>
+				<button className="substract-button" onClick={handleClick2}>
+					Decrement
+				</button>
+			</div>
+		</div>
+	);
 };
-
