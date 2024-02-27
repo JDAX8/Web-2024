@@ -1,10 +1,12 @@
-export const exerciseGifs = [
+export const exerciseGifs= [
     {
       id: crypto.randomUUID(),
+      title:"Lagartijas",
       src: 'https://qph.cf2.quoracdn.net/main-qimg-2c87c96929432d8719711d5853cdef83'
     },
     {
         id: crypto.randomUUID(),
+        title:"Curl bicep Spot",
         src: 'https://i.pinimg.com/originals/91/87/45/918745ee0ccdaadbd789d9dedf179a67.gif'
     },
     {
@@ -13,6 +15,7 @@ export const exerciseGifs = [
     },
     {
         id: crypto.randomUUID(),
+        title:"Fondos para tríceps",
         src: 'https://i.pinimg.com/originals/a2/c6/00/a2c600c2f600a6cbd350046b51449773.gif'
     },
   ]

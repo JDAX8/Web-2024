@@ -32,3 +32,10 @@
 	border-radius: "8%";
 	color: "white";
 }
+.img-container{
+	width: 624px;
+	height: 471px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

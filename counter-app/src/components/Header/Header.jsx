@@ -2,7 +2,7 @@ import React from "react"
 export function Header(){
     return(
         <header>
-            Hello World!!
+            <h1>Ejércitate con un solo clic</h1>
         </header>
     )
 }

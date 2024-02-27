@@ -39,11 +39,6 @@ export function App() {
     <div>
       <Header />
       <Body count={count} gif={gifs[currentGif]} />
-      <Footer
-        handleIncrement={handleIncrement}
-        handleDecrement={handleDecrement}
-        handleReset={handleReset}
-      />
     </div>
   );
 }
