@@ -16,6 +16,7 @@ export const Body = () => {
   const handleClick1 = () => {
   if (counter < totalRepeticiones - 1) {
     setCounter(counter + 1);
+	setShowImage(true);
 
     if (counter === 11) {
       setImageIndex(imageIndex + 1);
@@ -28,6 +29,8 @@ export const Body = () => {
     }
   }
 };
+
+  
 
   const handleClick2 = () => {
     if (counter > 0) {
@@ -45,7 +48,7 @@ export const Body = () => {
   };
 
   const handleReset = () => {
-    setCounter(0);
+    setCounter(0-1);
     setSerie(1);
     setImageIndex(0);
     setShowImage(false);
