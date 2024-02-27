@@ -12,21 +12,20 @@ export const Body = () => {
 
   const totalRepeticiones =  12;
   const handleClick1 = () => {
-    if (counter < totalRepeticiones) {
-      setCounter(counter + 1);
-      setShowImage(true);
+    setCounter(counter+1)
 
-      if (counter === 11) {
-        setImageIndex(imageIndex + 1);
-        setCounter(0);
+  if(counter == 11){
 
-        if (imageIndex === exerciseGifs.length - 1) {
-          setSerie(serie+1)
-          setText(`HAS TERMINADO LA SERIE NÚMERO ${serie}, sigue así!`);
+    setSerie(serie+1)
+    setCounter(0)
+    setImageIndex(imageIndex + 1);
+
+    if (imageIndex === exerciseGifs.length - 1) {
+         setText(`HAS TERMINADO LA SERIE NÚMERO ${serie}, sigue así!`);
         }
       }
-    }
   };
+  
 
   const handleClick2 = () => {
     if (counter > 0) {
