@@ -11,6 +11,7 @@ export const exerciseGifs= [
     },
     {
         id: crypto.randomUUID(),
+        title:"Curl bicep mancuernas",
         src: 'https://hips.hearstapps.com/hmg-prod/images/curl-mancuernas-1573207148.gif?crop=1.00xw:0.893xh;0,0.0174xh&resize=640:*'
     },
     {
