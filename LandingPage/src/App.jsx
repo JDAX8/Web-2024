@@ -1,5 +1,4 @@
-import { Header } from './components/Header/Header'
-import { Body } from './components/Body/Body'
+import { Body, Footer, Header } from './components'
 import React from 'react'
 
 export default function App () {
