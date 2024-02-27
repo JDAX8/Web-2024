@@ -1,4 +1,4 @@
-import { streamcards } from '../../data/streams_data'
+import { streamcards } from '../../data/streams_data.js'
 
 import './channels.css'
 

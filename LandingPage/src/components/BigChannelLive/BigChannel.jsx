@@ -1,4 +1,4 @@
-import { streamcards } from '../../data/streams_data'
+import { streamcards } from '../../data/streams_data.js'
 import React, { useState } from 'react'
 import next from '../../imgs/right.png'
 import prev from '../../imgs/left.png'
@@ -30,10 +30,10 @@ export const BigChannel = () => {
           onMouseLeave={() => setHoveredIndex(null)}
         >
           <div className='b-streams_image'>
-            <img id='b-streams_image_mineature' src={stream.src} alt='' />
+            <img id='b-streams-image-mineature' src={stream.src} alt='' />
             <div className='b-Live-section'>EN VIVO</div>
-            <div className='b-on_live'>
-              <div className='b-viewers_count'>{stream.views} espectadores</div>
+            <div className='b-on-live'>
+              <div className='b-viewers-count'>{stream.views} espectadores</div>
             </div>
             {/* Conditional rendering for hovered name container */}
             {hoveredIndex === index && (

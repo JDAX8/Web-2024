@@ -1,10 +1,10 @@
 import './LiveCategory.css'
-import { categorycards } from '../../data/categorys_data'
+import { categoryCards } from '../../data/categorys_data.js'
 
 export const LiveCategory = () => {
   return (
     <div className='live-category'>
-      {categorycards.map((category) => (
+      {categoryCards.map((category) => (
         <div key={category.id} className='category-main-container'>
           <div className='category_image'>
             <img src={category.src} alt='' />

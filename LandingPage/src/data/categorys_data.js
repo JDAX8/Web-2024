@@ -1,4 +1,4 @@
-export const categorycards = [
+export const categoryCards = [
   {
     id: crypto.randomUUID(),
     src: 'https://files.kick.com/images/subcategories/8/banner/responsives/8110f223-9654-4536-bfee-6a324bbf03f9___banner_205_273.webp',

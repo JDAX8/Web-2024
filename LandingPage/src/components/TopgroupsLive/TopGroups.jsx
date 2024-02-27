@@ -1,5 +1,5 @@
 import './TopGroups.css'
-import { topgroupscards } from '../../data/topgroups_data'
+import { topgroupscards } from '../../data/topgroups_data.js'
 
 export const TopGroups = () => {
   return (

@@ -1,4 +1,4 @@
-import { smallstreamcards } from '../../data/smallstreams_data'
+import { smallstreamcards } from '../../data/smallstreams_data.js'
 import './StreamChannels.css'
 
 export const StreamChannel = () => {

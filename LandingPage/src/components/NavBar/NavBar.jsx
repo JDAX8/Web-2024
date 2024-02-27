@@ -1,6 +1,6 @@
 import Threedots from '../../imgs/Three_dots.png'
 import { BurguerMenu } from '../BurguerMenu/BurguerMenu'
-import { legalfootercards } from '../../data/footer_data'
+import { legalfootercards } from '../../data/footer_data.js'
 
 import { useState } from 'react'
 import './NavBar.css'

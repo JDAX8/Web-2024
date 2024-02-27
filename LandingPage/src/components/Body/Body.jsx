@@ -1,6 +1,6 @@
 import { SideBar } from '../side_bar/SideBar'
 import { StreamChannel } from '../StreamChannels/StreamChannels'
-import { streamcards } from '../../data/streams_data'
+import { streamcards } from '../../data/streams_data.js'
 import { BigChannel } from '../BigChannelLive/BigChannel'
 import { LiveCategory } from '../LiveCategory/LiveCategory'
 import { TopGroups } from '../TopgroupsLive/TopGroups'

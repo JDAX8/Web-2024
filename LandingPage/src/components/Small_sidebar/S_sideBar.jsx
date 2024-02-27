@@ -1,7 +1,7 @@
 import './S_sideBar.css'
 import envivoicon from '../../imgs/envivo.png'
 import contractIcon from '../../imgs/contract.png'
-import { streamcards } from '../../data/streams_data'
+import { streamcards } from '../../data/streams_data.js'
 
 export const SmallSideBar = () => {
   return (
