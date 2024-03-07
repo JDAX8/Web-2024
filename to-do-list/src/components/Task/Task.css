@@ -1,0 +1,10 @@
+.task-container{
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: center;
+}
+.delete-button{
+    margin-left: 100%;
+}
