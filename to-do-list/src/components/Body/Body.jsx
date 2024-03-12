@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Body.css'
 import { AddTask } from "../AddTask/AddTask"
 import { CheckBox } from '../checkbox/checkbox'
-import { TaskContainer } from '../Task/Task'
+// import { TaskContainer } from '../Task/Task'
 import { TaskList } from '../TaskList/TaskList';
 
 function Body() {
@@ -24,7 +24,7 @@ function Body() {
     </div>
 
     <div>
-      <TaskContainer />
+      {/* <TaskContainer /> */}
     </div>
     </div>
     </>
