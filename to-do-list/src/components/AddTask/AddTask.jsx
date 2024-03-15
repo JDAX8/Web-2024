@@ -10,18 +10,27 @@ export function AddTask({ onAddTask }) {
 
   const handleAddTask = () => {
     if (task.trim() !== '') {
-      onAddTask(task); // Llama a la función del padre para agregar la tarea
+      const newTask = {id: crypto.randomUUID(), title: task, completed: false}; // Crea la nueva tarea usando la función recibida
+      onAddTask(newTask); // Llama a la función del padre para agregar la tarea
       setTask(''); // Reinicia el estado del input
     }
   };
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      handleAddTask();
+    }
+  };
+
   return (
-    <div>
+    <div className='add-task-container'>
       <input 
         type="text" 
         value={task} 
         onChange={handleInputChange} 
+        onKeyDown={handleKeyDown}
         placeholder="Enter a new task"
+        className='add-task_input'
       />
       <button onClick={handleAddTask}>Add Task</button>
     </div>

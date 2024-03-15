@@ -1,16 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Body.css'
 import { AddTask } from "../AddTask/AddTask"
-import { CheckBox } from '../checkbox/checkbox'
+// import { CheckBox } from '../checkbox/checkbox'
 // import { TaskContainer } from '../Task/Task'
 import { TaskList } from '../TaskList/TaskList';
 
-function Body() {
+const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? [] 
 
-  const [tasks, setTasks] = useState([]);
+function Body() {
+  const [tasks, setTasks] = useState(initTasks);
+
+  useEffect( () => {
+    window.localStorage.setItem("tasks", JSON.stringify(tasks))
+  } , [tasks])
 
   const addTask = (newTask) => {
-    setTasks([...tasks, newTask]); // Agrega la nueva tarea al estado de tareas
+    const updatedTasks = [...tasks, newTask];
+    localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+    setTasks(updatedTasks);
   };
 
   return (
@@ -20,7 +27,11 @@ function Body() {
       <h2>Task Manager</h2>
       <AddTask onAddTask={addTask} />
       {/* Otro componente que necesita conocer las tareas */}
-      <TaskList tasks={tasks} />
+      {
+        tasks.length > 0
+        ? (<TaskList tasks={tasks}/>)
+        : (<p>AÑADI PUES OME</p>)
+      }
     </div>
 
     <div>

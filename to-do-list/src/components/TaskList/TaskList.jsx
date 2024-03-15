@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './TaskList.css'
 
 export function TaskList({ tasks }) {
@@ -8,9 +7,11 @@ export function TaskList({ tasks }) {
       <div className='task-container'>
       <ul> 
         {tasks.map((task, index) => (
-          <div className='task-main-container'>
+          <div key={index} className='task-main-container'>
+            <div className='checkbox-title'>
               <input className="checkbox" type="checkbox"/>
-              <li key={index}>{task}</li>
+              <li className='task-list' key={index}>{task.title}</li>
+            </div>
               <button className='delete-button'>Delete</button>
           </div>
         ))}
