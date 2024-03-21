@@ -1,16 +1,21 @@
 import { useEffect } from 'react'
 import { useTask } from '../../hooks/useTask';
-import './Body.css'
 import { AddTask } from "../AddTask/AddTask"
+import { TaskList } from '../TaskList/TaskList';
 // import { CheckBox } from '../checkbox/checkbox'
 // import { TaskContainer } from '../Task/Task'
-import { TaskList } from '../TaskList/TaskList';
+
+import './Body.css'
 
 function Body() {
   const {
     tasks,
     handleTasks,
   } = useTask()
+
+  const deleteTask = (taskId) => {
+    handleTasks('delete', taskId);
+  };
 
   useEffect( () => {
     window.localStorage.setItem("tasks", JSON.stringify(tasks))
@@ -27,7 +32,7 @@ function Body() {
     <div className="body">
     <div>
       <h2>Task Manager</h2>
-      <AddTask onAddTask={handleTasks} />
+      <AddTask onAddTask={handleTasks} onDeleteTask={deleteTask} />
       {/* Otro componente que necesita conocer las tareas */}
       {
         tasks.length > 0

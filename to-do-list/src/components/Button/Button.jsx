@@ -1,9 +1,18 @@
-function Button({ type, onClick  }){
-  
+export const Button = (props) => {
+ 
+    const {title, type, onClick, uid} = props
+
     const handleClick = () => onClick(type)
   
     return (
-    <button onClick={handleClick}>
-        Delete
+    <button
+     onClick={handleClick}
+     className="button"
+     id = {uid}
+     >
+    {title}
+
     </button>)
-  }
+  };
+  
+ 

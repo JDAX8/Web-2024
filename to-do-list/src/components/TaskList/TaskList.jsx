@@ -1,8 +1,14 @@
+// TaskList.jsx
 import './TaskList.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { Button } from '../Button/Button';
 
-export function TaskList({ tasks }) {
+export function TaskList({ tasks, onDeleteTask }) {
   const [taskStates, setTaskStates] = useState(tasks.map(() => false));
+
+  useEffect(() => {
+    setTaskStates(tasks.map(() => false));
+  }, [tasks]);
 
   const handleCheckboxChange = (index) => {
     setTaskStates((prevStates) => {
@@ -12,13 +18,21 @@ export function TaskList({ tasks }) {
     });
   };
 
+  const deleteTask = () => {
+    setTaskStates(taskStates.filter((task)=> task.id === id))
+  } 
+
+  const handleDeleteTask = (taskId) => {
+    onDeleteTask(taskId);
+  };
+
   return (
     <div>
       <h3>Tasks:</h3>
       <div className="task-container">
         <ul>
           {tasks.map((task, index) => (
-            <div key={index} className="task-main-container">
+            <div key={task.id} className="task-main-container">
               <div className="checkbox-title">
                 <input
                   className="checkbox"
@@ -35,7 +49,9 @@ export function TaskList({ tasks }) {
                   {task.title}
                 </li>
               </div>
-              <button className="delete-button">Delete</button>
+              <Button title="delete" onClick={deleteTask}>
+                Delete
+              </Button>
             </div>
           ))}
         </ul>
