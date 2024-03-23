@@ -1,4 +1,3 @@
-// TaskList.jsx
 import './TaskList.css';
 import { useState, useEffect } from 'react';
 import { Button } from '../Button/Button';
@@ -18,10 +17,6 @@ export function TaskList({ tasks, onDeleteTask }) {
     });
   };
 
-  const deleteTask = () => {
-    setTaskStates(taskStates.filter((task)=> task.id === id))
-  } 
-
   const handleDeleteTask = (taskId) => {
     onDeleteTask(taskId);
   };
@@ -32,7 +27,7 @@ export function TaskList({ tasks, onDeleteTask }) {
       <div className="task-container">
         <ul>
           {tasks.map((task, index) => (
-            <div key={task.id} className="task-main-container">
+            <li key={task.id} className="task-main-container">
               <div className="checkbox-title">
                 <input
                   className="checkbox"
@@ -40,19 +35,22 @@ export function TaskList({ tasks, onDeleteTask }) {
                   checked={taskStates[index]}
                   onChange={() => handleCheckboxChange(index)}
                 />
-                <li
+                <span
                   className="task-list"
                   style={{
                     textDecoration: taskStates[index] ? 'line-through' : 'none',
                   }}
                 >
                   {task.title}
-                </li>
+                </span>
               </div>
-              <Button title="delete" onClick={deleteTask}>
+              <Button
+                title="delete"
+                onClick={() => handleDeleteTask(task.id)}
+              >
                 Delete
               </Button>
-            </div>
+            </li>
           ))}
         </ul>
       </div>

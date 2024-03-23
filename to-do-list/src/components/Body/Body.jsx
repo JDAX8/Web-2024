@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useTask } from '../../hooks/useTask';
+import { useTasks } from '../../hooks/useTask';
 import { AddTask } from "../AddTask/AddTask"
 import { TaskList } from '../TaskList/TaskList';
 // import { CheckBox } from '../checkbox/checkbox'
@@ -8,13 +8,10 @@ import { TaskList } from '../TaskList/TaskList';
 import './Body.css'
 
 function Body() {
-  const {
-    tasks,
-    handleTasks,
-  } = useTask()
+  const { tasks, createTask, deleteTask, deleteAllTasks } = useTasks();
 
-  const deleteTask = (taskId) => {
-    handleTasks('delete', taskId);
+  const handleDeleteTask = (taskId) => {
+    deleteTask(taskId);
   };
 
   useEffect( () => {
@@ -29,24 +26,27 @@ function Body() {
 
   return (
     <>
-    <div className="body">
-    <div>
-      <h2>Task Manager</h2>
-      <AddTask onAddTask={handleTasks} onDeleteTask={deleteTask} />
-      {/* Otro componente que necesita conocer las tareas */}
-      {
-        tasks.length > 0
-        ? (<TaskList tasks={tasks}/>)
-        : (<p>AÑADI PUES OME</p>)
-      }
-    </div>
-
-    <div>
-      {/* <TaskContainer /> */}
-    </div>
-    </div>
+      <div className="body">
+        <div>
+          <h2>Task Manager</h2>
+          <AddTask onAddTask={createTask} />
+          {/* Otro componente que necesita conocer las tareas */}
+          {tasks.length > 0 ? (
+            <TaskList
+              tasks={tasks}
+              onDeleteTask={deleteTask}
+              onDeleteAllTasks={deleteAllTasks}
+            />
+          ) : (
+            <p>AÑADI PUES OME</p>
+          )}
+        </div>
+        <div>
+          {/* <TaskContainer /> */}
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default Body
