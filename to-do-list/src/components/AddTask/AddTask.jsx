@@ -11,7 +11,7 @@ export function AddTask({ onAddTask }) {
   const handleAddTask = () => {
     if (task.trim() !== '') {
       const newTask = {id: crypto.randomUUID(), title: task, completed: false}; // Crea la nueva tarea usando la función recibida
-      onAddTask("add", newTask); // Llama a la función del padre para agregar la tarea
+      onAddTask(newTask);
       setTask(''); // Reinicia el estado del input
     }
   };

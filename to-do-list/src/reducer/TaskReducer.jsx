@@ -1,5 +1,3 @@
-import React from "react";
-import { useState, useEffect } from "react";
 import { TASK_ACTIONS } from '../consts/TasksActions'
 
 export const tasksReducer = (state, action) => {
@@ -14,9 +12,25 @@ export const tasksReducer = (state, action) => {
         localStorage.setItem("tasks", JSON.stringify(filteredTasks));
         return filteredTasks;
       }
-      case TASK_ACTIONS.DELETE_ALL_TASKS:
-        localStorage.removeItem("tasks");
-        return [];
+      case TASK_ACTIONS.COMPLETE_TASK: {
+        const updatedTasks = state.map(task => {
+          if (task.id === action.payload) {
+            return {
+              ...task,
+              completed: !task.completed
+            };
+          }
+          return task;
+        });
+        localStorage.setItem("tasks", JSON.stringify(updatedTasks));
+        return updatedTasks;
+      }
+      case TASK_ACTIONS.DELETE_ALL_TASKS: {
+        const filteredTasks = state.filter(task => task.completed !== true);
+        localStorage.setItem("tasks", JSON.stringify(filteredTasks));
+        return filteredTasks;
+      }
+
       default:
         console.error("Tipo de tarea no reconocido.");
         return state;

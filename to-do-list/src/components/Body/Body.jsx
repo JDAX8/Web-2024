@@ -6,9 +6,14 @@ import { TaskList } from '../TaskList/TaskList';
 // import { TaskContainer } from '../Task/Task'
 
 import './Body.css'
+import { DownBar } from '../DownBar/DownBar';
 
 function Body() {
-  const { tasks, createTask, deleteTask, deleteAllTasks } = useTasks();
+  const { tasks, createTask, completeTask, deleteTask, deleteAllTasks } = useTasks();
+  
+  const handleCheckChange = (taskId) => {
+    completeTask(taskId);
+  };
 
   const handleDeleteTask = (taskId) => {
     deleteTask(taskId);
@@ -17,12 +22,6 @@ function Body() {
   useEffect( () => {
     window.localStorage.setItem("tasks", JSON.stringify(tasks))
   } , [tasks])
-
-  // const addTask = (newTask) => {
-  //   const updatedTasks = [...tasks, newTask];
-  //   localStorage.setItem("tasks", JSON.stringify(updatedTasks));
-  //   setTasks(updatedTasks);
-  // };
 
   return (
     <>
@@ -34,15 +33,18 @@ function Body() {
           {tasks.length > 0 ? (
             <TaskList
               tasks={tasks}
-              onDeleteTask={deleteTask}
-              onDeleteAllTasks={deleteAllTasks}
+              onCheckChange={handleCheckChange}
+              onDeleteTask={handleDeleteTask}
             />
           ) : (
             <p>AÑADI PUES OME</p>
           )}
         </div>
         <div>
-          {/* <TaskContainer /> */}
+          {
+            tasks.length > 0 && 
+            <DownBar tasks={tasks} onCompleteTasks={deleteAllTasks}/>
+          }
         </div>
       </div>
     </>

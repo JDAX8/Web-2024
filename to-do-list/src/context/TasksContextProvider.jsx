@@ -13,7 +13,7 @@ export function TasksContextProvider({ children }) {
   }, [tasks])
 
   const createTask = (newTask) => {
-    const action = {
+    const action = { 
       type: TASK_ACTIONS.ADD_TASK,
       payload: newTask
     }
@@ -24,6 +24,14 @@ export function TasksContextProvider({ children }) {
     const action = {
       type: TASK_ACTIONS.DELETE_TASK,
       payload: taskToDeleteID
+    }
+    dispatchTask(action)
+  }
+
+  const completeTask = (taskToCompleteID) => {
+    const action = {
+      type: TASK_ACTIONS.COMPLETE_TASK,
+      payload: taskToCompleteID
     }
     dispatchTask(action)
   }
@@ -40,6 +48,7 @@ export function TasksContextProvider({ children }) {
       tasks,
       createTask,
       deleteTask,
+      completeTask,
       deleteAllTasks
     }}>
       {children}

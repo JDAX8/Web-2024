@@ -1,44 +1,35 @@
 import './TaskList.css';
-import { useState, useEffect } from 'react';
 import { Button } from '../Button/Button';
 
-export function TaskList({ tasks, onDeleteTask }) {
-  const [taskStates, setTaskStates] = useState(tasks.map(() => false));
+export function TaskList({ tasks, onCheckChange, onDeleteTask }) {
 
-  useEffect(() => {
-    setTaskStates(tasks.map(() => false));
-  }, [tasks]);
 
-  const handleCheckboxChange = (index) => {
-    setTaskStates((prevStates) => {
-      const newStates = [...prevStates];
-      newStates[index] = !newStates[index];
-      return newStates;
-    });
-  };
+  const handleCheckboxChange = (taskId) => {
+    onCheckChange(taskId)
+  }
 
   const handleDeleteTask = (taskId) => {
     onDeleteTask(taskId);
-  };
+  }
 
   return (
     <div>
       <h3>Tasks:</h3>
       <div className="task-container">
         <ul>
-          {tasks.map((task, index) => (
+          {tasks.map((task) => (
             <li key={task.id} className="task-main-container">
               <div className="checkbox-title">
                 <input
                   className="checkbox"
                   type="checkbox"
-                  checked={taskStates[index]}
-                  onChange={() => handleCheckboxChange(index)}
+                  checked={task.completed}
+                  onChange={() => handleCheckboxChange(task.id)}
                 />
                 <span
                   className="task-list"
                   style={{
-                    textDecoration: taskStates[index] ? 'line-through' : 'none',
+                    textDecoration: task.completed? 'line-through' : 'none',
                   }}
                 >
                   {task.title}

@@ -8,12 +8,7 @@ export const useTasks = () => {
     throw new Error('This Component should be within TasksContextProvider')
   }
 
-  const { tasks, createTask, deleteTask, deleteAllTasks } = context
-
   return {
-    tasks,
-    createTask,
-    deleteTask,
-    deleteAllTasks
+    ...context
   }
 }
