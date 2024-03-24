@@ -36,6 +36,13 @@ export function TasksContextProvider ({ children }) {
     dispatchTask(action)
   }
 
+  const completeAllTasks = () => {
+    const action = {
+      type: TASK_ACTIONS.COMPLETE_ALL_TASKS
+    }
+    dispatchTask(action)
+  }
+
   const deleteAllTasks = () => {
     const action = {
       type: TASK_ACTIONS.DELETE_ALL_TASKS
@@ -49,6 +56,7 @@ export function TasksContextProvider ({ children }) {
       createTask,
       deleteTask,
       completeTask,
+      completeAllTasks,
       deleteAllTasks
     }}
     >

@@ -1,3 +1,4 @@
+import './Button.css'
 export const Button = (props) => {
   const { title, type, onClick, uid } = props
 

@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button'
 import './AddTask.css'
 import { useState } from 'react'
 
@@ -24,15 +25,18 @@ export function AddTask ({ onAddTask }) {
 
   return (
     <div className='add-task-container'>
-      <input
-        type='text'
-        value={task}
-        onChange={handleInputChange}
-        onKeyDown={handleKeyDown}
-        placeholder='Enter a new task'
-        className='add-task_input'
-      />
-      <button onClick={handleAddTask}>Add Task</button>
+      <div class='inputBox'>
+        <input
+          required=''
+          type='text'
+          value={task}
+          onChange={handleInputChange}
+          onKeyDown={handleKeyDown}
+          placeholder='Enter a new task'
+          className='add-task_input'
+        />
+      </div>
+      <Button title='Add Task' onClick={handleAddTask} />
     </div>
   )
 }

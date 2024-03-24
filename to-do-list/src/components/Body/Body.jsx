@@ -7,7 +7,7 @@ import { DownBar } from '../DownBar/DownBar'
 import { Filter } from '../Filter/Filter'
 
 function Body () {
-  const { tasks, createTask, completeTask, deleteTask, deleteAllTasks } = useTasks()
+  const { tasks, createTask, completeTask, deleteTask, completeAllTasks, deleteAllTasks } = useTasks()
   const [filterOption, setFilterOption] = useState('All')
   const [actualTasks, setActualTasks] = useState(tasks)
 
@@ -48,8 +48,8 @@ function Body () {
     <>
       <div className='body'>
         <div>
-          <h2>Task Manager</h2>
-          <p />
+          <h1>Task Manager</h1>
+          <p className='bywho'>By: Isaac Calle & JuanD Valencia</p>
           <AddTask onAddTask={createTask} />
           <Filter onSelectOption={handleFilterChange} /> {/* Pasar la función de manejo del cambio de opción */}
           {actualTasks.length > 0
@@ -61,11 +61,13 @@ function Body () {
               />
               )
             : (
-              <p>AÑADI PUES OME</p>
+              <>
+                <img src='https://media3.giphy.com/media/fX2tHgGgfzMOD12DRo/giphy.gif' />
+              </>
               )}
         </div>
         <div>
-          {tasks.length > 0 && <DownBar tasks={tasks} onCompleteTasks={deleteAllTasks} />}
+          {tasks.length > 0 && <DownBar tasks={tasks} onCompleteTasks={completeAllTasks} onClearAll={deleteAllTasks} />}
         </div>
       </div>
     </>

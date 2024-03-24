@@ -12,7 +12,7 @@ export function TaskList ({ tasks, onCheckChange, onDeleteTask }) {
 
   return (
     <div>
-      <h3>Tasks:</h3>
+      <h3 className='tete'>Tasks:</h3>
       <div className='task-container'>
         <ul>
           {tasks.map((task) => (
@@ -34,11 +34,10 @@ export function TaskList ({ tasks, onCheckChange, onDeleteTask }) {
                 </span>
               </div>
               <Button
-                title='delete'
+                title='Delete'
                 onClick={() => handleDeleteTask(task.id)}
-              >
-                Delete
-              </Button>
+              />
+
             </li>
           ))}
         </ul>

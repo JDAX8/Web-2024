@@ -2,7 +2,7 @@ import './DownBar.css'
 import { useState, useEffect } from 'react'
 import { Button } from '../Button/Button'
 
-export function DownBar ({ tasks, onCompleteTasks }) {
+export function DownBar ({ tasks, onCompleteTasks, onClearAll }) {
   const [completedTasks, setCompletedTasks] = useState('0 out of 0')
 
   useEffect(() => {
@@ -15,7 +15,11 @@ export function DownBar ({ tasks, onCompleteTasks }) {
   return (
     <div>
       <p className='textt'>{completedTasks}</p>
-      <Button title='Complete Tasks' onClick={() => onCompleteTasks()} />
+      <div>
+        <Button title='Complete Tasks' onClick={() => onCompleteTasks()} />
+        <Button title='Clear All' onClick={() => onClearAll()} />
+      </div>
+
     </div>
   )
 }
