@@ -13,3 +13,11 @@
     color: brown;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+    .body {
+        padding: 0; /* Cambiado el padding para pantallas más pequeñas */
+        width: 400px;
+        max-height: 700px;
+    }
+}
