@@ -27,3 +27,25 @@
 .tete{
     color: brown;
 }
+
+@media (max-width: 600px) {
+    .task-main-container {
+        flex-direction: column; /* Cambia la dirección a columna para dispositivos pequeños */
+        width: 90%; /* Utiliza el 90% del ancho disponible */
+        margin-left: auto; /* Reinicia el margen izquierdo a automático */
+        margin-right: auto; /* Reinicia el margen derecho a automático */
+    }
+
+    .checkbox,
+    .task-list {
+        margin-right: 0; /* Elimina el margen para dispositivos pequeños */
+        margin-bottom: 10px; /* Añade un margen inferior entre elementos */
+    }
+    
+    input[type="text"] {
+        width: 100%; /* Hace que el input ocupe todo el ancho del contenedor */
+        padding: 8px; /* Ajusta el padding para mejorar la apariencia */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+}
