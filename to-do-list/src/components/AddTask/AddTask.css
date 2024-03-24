@@ -13,3 +13,21 @@
     margin-right: 30px;
     border-color: brown;
 }
+
+@media screen and (max-width: 600px) {
+    .add-task-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .add-task_input{
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        color: black;
+        margin-right: 30px;
+        border-color: brown;
+    }
+}
