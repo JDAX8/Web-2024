@@ -1,19 +1,19 @@
 import { useReducer, useEffect } from 'react'
-import { TasksContext } from "./TasksContext"
+import { TasksContext } from './TasksContext'
 import { tasksReducer } from '../reducer/TaskReducer'
 import { TASK_ACTIONS } from '../consts/TasksActions'
 
-const initTasks = JSON.parse(window.localStorage.getItem("tasks")) ?? []
+const initTasks = JSON.parse(window.localStorage.getItem('tasks')) ?? []
 
-export function TasksContextProvider({ children }) {
+export function TasksContextProvider ({ children }) {
   const [tasks, dispatchTask] = useReducer(tasksReducer, initTasks)
 
   useEffect(() => {
-    window.localStorage.setItem("tasks", JSON.stringify(tasks))
+    window.localStorage.setItem('tasks', JSON.stringify(tasks))
   }, [tasks])
 
   const createTask = (newTask) => {
-    const action = { 
+    const action = {
       type: TASK_ACTIONS.ADD_TASK,
       payload: newTask
     }
@@ -50,7 +50,8 @@ export function TasksContextProvider({ children }) {
       deleteTask,
       completeTask,
       deleteAllTasks
-    }}>
+    }}
+    >
       {children}
     </TasksContext.Provider>
   )

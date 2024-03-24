@@ -1,42 +1,40 @@
-import './TaskList.css';
-import { Button } from '../Button/Button';
+import './TaskList.css'
+import { Button } from '../Button/Button'
 
-export function TaskList({ tasks, onCheckChange, onDeleteTask }) {
-
-
+export function TaskList ({ tasks, onCheckChange, onDeleteTask }) {
   const handleCheckboxChange = (taskId) => {
     onCheckChange(taskId)
   }
 
   const handleDeleteTask = (taskId) => {
-    onDeleteTask(taskId);
+    onDeleteTask(taskId)
   }
 
   return (
     <div>
       <h3>Tasks:</h3>
-      <div className="task-container">
+      <div className='task-container'>
         <ul>
           {tasks.map((task) => (
-            <li key={task.id} className="task-main-container">
-              <div className="checkbox-title">
+            <li key={task.id} className='task-main-container'>
+              <div className='checkbox-title'>
                 <input
-                  className="checkbox"
-                  type="checkbox"
+                  className='checkbox'
+                  type='checkbox'
                   checked={task.completed}
                   onChange={() => handleCheckboxChange(task.id)}
                 />
                 <span
-                  className="task-list"
+                  className='task-list'
                   style={{
-                    textDecoration: task.completed? 'line-through' : 'none',
+                    textDecoration: task.completed ? 'line-through' : 'none'
                   }}
                 >
                   {task.title}
                 </span>
               </div>
               <Button
-                title="delete"
+                title='delete'
                 onClick={() => handleDeleteTask(task.id)}
               >
                 Delete
@@ -46,5 +44,5 @@ export function TaskList({ tasks, onCheckChange, onDeleteTask }) {
         </ul>
       </div>
     </div>
-  );
+  )
 }
