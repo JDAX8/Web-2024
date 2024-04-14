@@ -1,2 +1,2 @@
-export * from './fetch-factory';
-export * from './fetch-img';
+export * from './fetchCatFacts';
+export * from './fetchCatImg';

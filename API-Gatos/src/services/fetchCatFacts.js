@@ -1,8 +1,8 @@
 export const fetchCatFacts = async () => {
     try {
-      const response = await fetch("https://catfact.ninja/facts?max_length=100&limit=10");
+      const response = await fetch("https://catfact.ninja/fact?max_length=200");
       const jsonData = await response.json();
-      return jsonData.data; 
+      return jsonData.fact; 
     } catch (error) {
       console.error("Error trayendo la data:", error);
       return [];

@@ -1,2 +1,1 @@
-export * from './CatSentence';
-export * from './CatImg';
+export * from './CatCard/CatCard';
