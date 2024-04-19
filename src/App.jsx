@@ -1,14 +1,15 @@
-import React from 'react'
-import { Header } from "./components/Header/header"
-import { Body } from "./components/Body/Body"
-import { Footer } from "./components/Footer/footer"
+import './App.css';
+import 'h8k-components';
+import { Body } from './components/Body';
+const title = "Customer Search";
 
-export default function App(){
-    return(
-      <>
-      <Header></Header>
-      <Body></Body>
-      <Footer></Footer>
-      </>
-    )
+const App = () => {
+  return (
+    <div className="App">
+      <h1>{title}</h1>
+      <Body />
+    </div>
+  );
 }
+
+export default App;
