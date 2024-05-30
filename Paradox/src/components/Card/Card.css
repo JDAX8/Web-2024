@@ -1,0 +1,25 @@
+
+.userimg {
+    box-shadow: 0 0 20px 5px #BE7DDD; /* Aplica el efecto de brillo con box-shadow */
+}
+.px-card-name {
+    font-family: 'ProximaNova';
+    font-weight: bolder;
+    background: linear-gradient(to right, #BE7DDD, #DDDDDD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(to right, #BE7DDD, #DDDDDD) 1;
+    font-size: 30px;
+  }
+
+.px-card-description {
+    font-family: 'ProximaNova';
+    font-weight: normal;
+    font-size: 20px;
+    color: #DDDDDD;
+    margin-top: 10px;
+}
+.px-card-socialmedia-img:hover{
+    cursor: pointer;
+}

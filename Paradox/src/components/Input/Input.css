@@ -1,0 +1,19 @@
+.paradox-input {
+    border: 3px solid #ffffff;
+    padding-left: 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+.paradox-input[type="file"] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+}
+.paradox-input::-webkit-placeholder {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Proxima-Nova';
+    margin-left: 10%;
+  }

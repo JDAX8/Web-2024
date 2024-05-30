@@ -1,0 +1,35 @@
+.px-programs-footer-title{
+    color: #BE7DDD;
+    font-family: 'ProximaNova';
+    font-weight: bolder;
+}
+
+.px-programs-footer{
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 100vw;
+    color: #fff; 
+    bottom: 0;
+    padding: 10px;
+}
+.px-programs-footer-big-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    padding-right: 3%;
+}
+.px-programs-footer-section{
+    display: flex;
+    height: 20vh;
+    padding-right: 3%;
+    padding-top: 1%;
+}
+.px-programs-footer-div{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3%;
+}

@@ -1,0 +1,10 @@
+body{
+    background-image: url("../../assets/imgs/background.png");
+}
+.px-postit-header
+{
+    font-weight: bold;
+}
+.px-postit-div{
+    width: 185vh;
+}
